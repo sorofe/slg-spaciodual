@@ -1,0 +1,149 @@
+<svg viewBox="0 0 480 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Aura gradient -->
+    <radialGradient id="aura" cx="50%" cy="45%" r="50%">
+      <stop offset="0%"   stop-color="#c9a96e" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Chakra glow filters -->
+    <filter id="g1" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="g2" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Chakra radial gradients -->
+    <radialGradient id="crown-g"   cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e8d5ff"/><stop offset="100%" stop-color="#9b59b6"/></radialGradient>
+    <radialGradient id="third-g"   cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#c8d8ff"/><stop offset="100%" stop-color="#3f51b5"/></radialGradient>
+    <radialGradient id="throat-g"  cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#b3e8ff"/><stop offset="100%" stop-color="#0288d1"/></radialGradient>
+    <radialGradient id="heart-g"   cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#c8ffd8"/><stop offset="100%" stop-color="#2e7d32"/></radialGradient>
+    <radialGradient id="solar-g"   cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fffde0"/><stop offset="100%" stop-color="#f9a825"/></radialGradient>
+    <radialGradient id="sacral-g"  cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffe8c0"/><stop offset="100%" stop-color="#e65100"/></radialGradient>
+    <radialGradient id="root-g"    cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffd0d0"/><stop offset="100%" stop-color="#b71c1c"/></radialGradient>
+
+    <!-- Body gradient -->
+    <linearGradient id="body-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#c9a96e" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#c9a96e" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="680" fill="#0a0a0a"/>
+
+  <!-- Aura glow -->
+  <ellipse cx="240" cy="360" rx="180" ry="260" fill="url(#aura)"/>
+
+  <!-- ── HUMAN SILHOUETTE — Lotus meditation pose ── -->
+
+  <!-- Head -->
+  <circle cx="240" cy="108" r="33"
+    fill="rgba(201,169,110,0.13)" stroke="rgba(201,169,110,0.3)" stroke-width="1.2"/>
+
+  <!-- Neck -->
+  <rect x="229" y="139" width="22" height="22" rx="4"
+    fill="rgba(201,169,110,0.10)" stroke="rgba(201,169,110,0.2)" stroke-width="1"/>
+
+  <!-- Torso -->
+  <path d="M 205 161 C 195 170 188 200 186 240 L 184 340 L 296 340 L 294 240 C 292 200 285 170 275 161 Z"
+    fill="rgba(201,169,110,0.11)" stroke="rgba(201,169,110,0.22)" stroke-width="1.2"/>
+
+  <!-- Left arm resting -->
+  <path d="M 188 195 Q 150 240 138 310 Q 135 330 145 340 Q 158 348 165 335 Q 170 315 175 285 Q 183 245 192 215"
+    fill="rgba(201,169,110,0.09)" stroke="rgba(201,169,110,0.2)" stroke-width="1.2"/>
+  <!-- Left hand on knee -->
+  <ellipse cx="143" cy="343" rx="12" ry="8" fill="rgba(201,169,110,0.14)" stroke="rgba(201,169,110,0.28)" stroke-width="1"/>
+
+  <!-- Right arm resting -->
+  <path d="M 292 195 Q 330 240 342 310 Q 345 330 335 340 Q 322 348 315 335 Q 310 315 305 285 Q 297 245 288 215"
+    fill="rgba(201,169,110,0.09)" stroke="rgba(201,169,110,0.2)" stroke-width="1.2"/>
+  <!-- Right hand on knee -->
+  <ellipse cx="337" cy="343" rx="12" ry="8" fill="rgba(201,169,110,0.14)" stroke="rgba(201,169,110,0.28)" stroke-width="1"/>
+
+  <!-- Lotus legs — left leg over right -->
+  <path d="M 184 338 Q 165 355 130 375 Q 100 392 95 420 Q 93 445 115 452 Q 150 460 180 448 Q 205 438 220 420 L 240 408"
+    fill="rgba(201,169,110,0.10)" stroke="rgba(201,169,110,0.22)" stroke-width="1.2"/>
+  <!-- Lotus legs — right leg under -->
+  <path d="M 296 338 Q 315 355 350 375 Q 380 392 385 420 Q 387 445 365 452 Q 330 460 300 448 Q 275 438 260 420 L 240 408"
+    fill="rgba(201,169,110,0.08)" stroke="rgba(201,169,110,0.18)" stroke-width="1.2"/>
+  <!-- Feet -->
+  <ellipse cx="115" cy="450" rx="22" ry="9" fill="rgba(201,169,110,0.12)" stroke="rgba(201,169,110,0.22)" stroke-width="1"/>
+  <ellipse cx="365" cy="450" rx="22" ry="9" fill="rgba(201,169,110,0.10)" stroke="rgba(201,169,110,0.18)" stroke-width="1"/>
+  <!-- Center lap area -->
+  <ellipse cx="240" cy="415" rx="55" ry="22" fill="rgba(201,169,110,0.06)" stroke="rgba(201,169,110,0.12)" stroke-width="1"/>
+
+  <!-- ── SPINE ENERGY LINE ── -->
+  <line x1="240" y1="430" x2="240" y2="88"
+    stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-dasharray="3 7"/>
+
+  <!-- ═══ CHAKRAS (bottom to top) ═══ -->
+
+  <!-- 1. Root — Muladhara — Red -->
+  <circle cx="240" cy="415" r="28" fill="#b71c1c" opacity="0.12" filter="url(#g1)"/>
+  <circle cx="240" cy="415" r="13" fill="url(#root-g)" filter="url(#g1)"/>
+  <circle cx="240" cy="415" r="18" fill="none" stroke="#ef5350" stroke-width="1" opacity="0.5"/>
+  <!-- Labels left -->
+  <text x="80"  y="411" text-anchor="end" fill="rgba(239,83,80,0.85)"  font-size="9.5" font-family="serif" letter-spacing="1.5" font-style="italic">MULADHARA</text>
+  <text x="80"  y="423" text-anchor="end" fill="rgba(245,240,232,0.35)" font-size="8"   font-family="sans-serif" letter-spacing=".5">Raíz</text>
+  <line x1="82" y1="415" x2="222" y2="415" stroke="rgba(239,83,80,0.2)" stroke-width=".75" stroke-dasharray="3 4"/>
+
+  <!-- 2. Sacral — Svadhisthana — Orange -->
+  <circle cx="240" cy="330" r="26" fill="#e65100" opacity="0.12" filter="url(#g1)"/>
+  <circle cx="240" cy="330" r="12" fill="url(#sacral-g)" filter="url(#g1)"/>
+  <circle cx="240" cy="330" r="17" fill="none" stroke="#ff7043" stroke-width="1" opacity="0.5"/>
+  <text x="80"  y="326" text-anchor="end" fill="rgba(255,112,67,0.85)"  font-size="9.5" font-family="serif" letter-spacing="1.5" font-style="italic">SVADHISTHANA</text>
+  <text x="80"  y="338" text-anchor="end" fill="rgba(245,240,232,0.35)" font-size="8"   font-family="sans-serif" letter-spacing=".5">Sacro</text>
+  <line x1="82" y1="330" x2="222" y2="330" stroke="rgba(255,112,67,0.2)" stroke-width=".75" stroke-dasharray="3 4"/>
+
+  <!-- 3. Solar Plexus — Manipura — Yellow -->
+  <circle cx="240" cy="268" r="26" fill="#f9a825" opacity="0.12" filter="url(#g1)"/>
+  <circle cx="240" cy="268" r="12" fill="url(#solar-g)" filter="url(#g1)"/>
+  <circle cx="240" cy="268" r="17" fill="none" stroke="#ffca28" stroke-width="1" opacity="0.5"/>
+  <text x="80"  y="264" text-anchor="end" fill="rgba(255,202,40,0.85)"  font-size="9.5" font-family="serif" letter-spacing="1.5" font-style="italic">MANIPURA</text>
+  <text x="80"  y="276" text-anchor="end" fill="rgba(245,240,232,0.35)" font-size="8"   font-family="sans-serif" letter-spacing=".5">Plexo Solar</text>
+  <line x1="82" y1="268" x2="222" y2="268" stroke="rgba(255,202,40,0.2)" stroke-width=".75" stroke-dasharray="3 4"/>
+
+  <!-- 4. Heart — Anahata — Green -->
+  <circle cx="240" cy="210" r="28" fill="#2e7d32" opacity="0.14" filter="url(#g1)"/>
+  <circle cx="240" cy="210" r="13" fill="url(#heart-g)" filter="url(#g1)"/>
+  <circle cx="240" cy="210" r="19" fill="none" stroke="#66bb6a" stroke-width="1" opacity="0.55"/>
+  <text x="80"  y="206" text-anchor="end" fill="rgba(102,187,106,0.9)"  font-size="9.5" font-family="serif" letter-spacing="1.5" font-style="italic">ANAHATA</text>
+  <text x="80"  y="218" text-anchor="end" fill="rgba(245,240,232,0.35)" font-size="8"   font-family="sans-serif" letter-spacing=".5">Corazón</text>
+  <line x1="82" y1="210" x2="222" y2="210" stroke="rgba(102,187,106,0.22)" stroke-width=".75" stroke-dasharray="3 4"/>
+
+  <!-- 5. Throat — Vishuddha — Blue -->
+  <circle cx="240" cy="158" r="24" fill="#0277bd" opacity="0.14" filter="url(#g1)"/>
+  <circle cx="240" cy="158" r="11" fill="url(#throat-g)" filter="url(#g1)"/>
+  <circle cx="240" cy="158" r="16" fill="none" stroke="#29b6f6" stroke-width="1" opacity="0.5"/>
+  <text x="80"  y="154" text-anchor="end" fill="rgba(41,182,246,0.85)"  font-size="9.5" font-family="serif" letter-spacing="1.5" font-style="italic">VISHUDDHA</text>
+  <text x="80"  y="166" text-anchor="end" fill="rgba(245,240,232,0.35)" font-size="8"   font-family="sans-serif" letter-spacing=".5">Garganta</text>
+  <line x1="82" y1="158" x2="222" y2="158" stroke="rgba(41,182,246,0.2)" stroke-width=".75" stroke-dasharray="3 4"/>
+
+  <!-- 6. Third Eye — Ajna — Indigo -->
+  <circle cx="240" cy="108" r="22" fill="#283593" opacity="0.18" filter="url(#g2)"/>
+  <circle cx="240" cy="108" r="10" fill="url(#third-g)" filter="url(#g2)"/>
+  <circle cx="240" cy="108" r="15" fill="none" stroke="#5c6bc0" stroke-width="1" opacity="0.55"/>
+  <text x="80"  y="104" text-anchor="end" fill="rgba(92,107,192,0.9)"  font-size="9.5" font-family="serif" letter-spacing="1.5" font-style="italic">AJNA</text>
+  <text x="80"  y="116" text-anchor="end" fill="rgba(245,240,232,0.35)" font-size="8"   font-family="sans-serif" letter-spacing=".5">Tercer Ojo</text>
+  <line x1="82" y1="108" x2="222" y2="108" stroke="rgba(92,107,192,0.2)" stroke-width=".75" stroke-dasharray="3 4"/>
+
+  <!-- 7. Crown — Sahasrara — Violet -->
+  <circle cx="240" cy="62"  r="30" fill="#7b1fa2" opacity="0.16" filter="url(#g2)"/>
+  <circle cx="240" cy="62"  r="13" fill="url(#crown-g)" filter="url(#g2)"/>
+  <circle cx="240" cy="62"  r="20" fill="none" stroke="#ce93d8" stroke-width="1" opacity="0.55"/>
+  <circle cx="240" cy="62"  r="26" fill="none" stroke="#ce93d8" stroke-width=".5" opacity="0.25"/>
+  <text x="80"  y="58"  text-anchor="end" fill="rgba(206,147,216,0.9)"  font-size="9.5" font-family="serif" letter-spacing="1.5" font-style="italic">SAHASRARA</text>
+  <text x="80"  y="70"  text-anchor="end" fill="rgba(245,240,232,0.35)" font-size="8"   font-family="sans-serif" letter-spacing=".5">Corona</text>
+  <line x1="82" y1="62"  x2="222" y2="62"  stroke="rgba(206,147,216,0.22)" stroke-width=".75" stroke-dasharray="3 4"/>
+
+  <!-- ── Subtle decorative rings at bottom ── -->
+  <circle cx="240" cy="490" rx="90" r="90" fill="none" stroke="rgba(201,169,110,0.05)" stroke-width="1"/>
+  <circle cx="240" cy="490" rx="70" r="70" fill="none" stroke="rgba(201,169,110,0.04)" stroke-width="1"/>
+
+  <!-- ── Bottom label ── -->
+  <text x="240" y="540" text-anchor="middle" fill="rgba(201,169,110,0.3)" font-size="8.5" font-family="serif" letter-spacing="3" font-style="italic">Los 7 Centros Energéticos</text>
+</svg>
