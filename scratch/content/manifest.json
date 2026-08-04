@@ -1,0 +1,87 @@
+{
+  "home": {
+    "url": "https://www.sajesanctuary.com/",
+    "images": 27,
+    "text_len": 4139
+  },
+  "practitioners": {
+    "url": "https://www.sajesanctuary.com/practitioners",
+    "images": 13,
+    "text_len": 2712
+  },
+  "resources": {
+    "url": "https://www.sajesanctuary.com/resources",
+    "images": 37,
+    "text_len": 8533
+  },
+  "book": {
+    "url": "https://www.sajesanctuary.com/book",
+    "images": 5,
+    "text_len": 135
+  },
+  "offerings/akashic-record-readings": {
+    "url": "https://www.sajesanctuary.com/offerings/akashic-record-readings",
+    "images": 9,
+    "text_len": 3842
+  },
+  "offerings/apothecary": {
+    "url": "https://www.sajesanctuary.com/offerings/apothecary",
+    "images": 9,
+    "text_len": 3489
+  },
+  "offerings/astrology-readings": {
+    "url": "https://www.sajesanctuary.com/offerings/astrology-readings",
+    "images": 7,
+    "text_len": 1453
+  },
+  "offerings/aura-photography": {
+    "url": "https://www.sajesanctuary.com/offerings/aura-photography",
+    "images": 8,
+    "text_len": 2857
+  },
+  "offerings/breathwork": {
+    "url": "https://www.sajesanctuary.com/offerings/breathwork",
+    "images": 7,
+    "text_len": 2483
+  },
+  "offerings/chakra-balancing": {
+    "url": "https://www.sajesanctuary.com/offerings/chakra-balancing",
+    "images": 8,
+    "text_len": 1710
+  },
+  "offerings/dream-interpretation": {
+    "url": "https://www.sajesanctuary.com/offerings/dream-interpretation",
+    "images": 9,
+    "text_len": 2178
+  },
+  "offerings/energetic-signature": {
+    "url": "https://www.sajesanctuary.com/offerings/energetic-signature",
+    "images": 8,
+    "text_len": 2272
+  },
+  "offerings/magdalene-reiki": {
+    "url": "https://www.sajesanctuary.com/magdalene-reiki",
+    "images": 8,
+    "text_len": 2058
+  },
+  "offerings/reiki-energy-healing": {
+    "url": "https://www.sajesanctuary.com/offerings/reiki-energy-healing",
+    "images": 11,
+    "text_len": 3760
+  },
+  "offerings/sound-alchemy": {
+    "url": "https://www.sajesanctuary.com/offerings/sound-alchemy",
+    "images": 9,
+    "text_len": 3565
+  },
+  "offerings/spirit-guide": {
+    "url": "https://www.sajesanctuary.com/offerings/spirit-guide",
+    "images": 8,
+    "text_len": 1329
+  },
+  "offerings/tarot-oracle-readings": {
+    "url": "https://www.sajesanctuary.com/offerings/tarot-oracle-readings",
+    "images": 9,
+    "text_len": 2657
+  }
+}

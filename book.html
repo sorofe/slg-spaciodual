@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Session | Spacio Dual (Clone)</title>
+<meta name="description" content="Static demo booking page — no real scheduling.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header is-solid" data-always-solid="true">
+    <div class="header-inner">
+      <a href="index.html" class="logo-text">Spacio Dual</a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="nav-item-dropdown">
+          <a href="#" class="nav-link">Services & Offerings</a>
+          <div class="dropdown-panel">
+          <a href="offerings/akashic-record-readings.html">Akashic Record Readings</a>
+          <a href="offerings/apothecary.html">Apothecary</a>
+          <a href="offerings/astrology-readings.html">Astrology Readings</a>
+          <a href="offerings/aura-photography.html">Aura Photography</a>
+          <a href="offerings/breathwork.html">Breathwork</a>
+          <a href="offerings/chakra-balancing.html">Chakra Balancing</a>
+          <a href="offerings/dream-interpretation.html">Dream Interpretation</a>
+          <a href="offerings/energetic-signature.html">Energetic Signature</a>
+          <a href="offerings/magdalene-reiki.html">Magdalene Reiki</a>
+          <a href="offerings/reiki-energy-healing.html">Reiki Energy Healing</a>
+          <a href="offerings/sound-alchemy.html">Sound Alchemy</a>
+          <a href="offerings/spirit-guide.html">Spirit Guide Conversations</a>
+          <a href="offerings/tarot-oracle-readings.html">Tarot & Oracle Readings</a>
+            <a href="#" class="is-disabled" style="opacity:.5">Mentorship (coming soon)</a>
+          </div>
+        </div>
+        <a href="practitioners.html" class="nav-link">Practitioners</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="book.html" class="nav-link">Book a Session</a>
+      </nav>
+      <div class="header-icons">
+        <a href="https://www.facebook.com/SajeSanctuary" class="icon-link" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M13 22v-9h3l1-4h-4V6.5C13 5.4 13.6 5 14.7 5H17V1.2C16.6 1.1 15.3 1 13.9 1 11 1 9 2.8 9 6v3H6v4h3v9h4z"/></svg></a>
+        <a href="https://www.instagram.com/sajesanctuary/" class="icon-link" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
+        <a href="book.html" class="icon-link" aria-label="Cart"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1.3"/><circle cx="18" cy="21" r="1.3"/><path d="M2 3h3l2.4 12.2A2 2 0 0 0 9.4 17H18a2 2 0 0 0 2-1.6L21.5 8H6"/></svg></a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+<main>
+  <section class="hero page-hero" style="background-image:url('images/saje-st-thomas3.jpg')">
+    <div class="hero-content">
+      <h1>Book a Session</h1>
+      <p class="hero-sub" style="font-size:1.1rem">Please fill out the form below to request a session</p>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="container text-center">
+      <div class="notice-badge">This is a static demo booking form. No real scheduling or payment happens here — it does not submit anywhere.</div>
+      <form class="form-mock">
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" placeholder="Jane Doe">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="jane@example.com">
+        </div>
+        <div class="form-row">
+          <label for="offering">Session Type</label>
+          <select id="offering">
+          <option>Akashic Record Readings</option>
+          <option>Apothecary</option>
+          <option>Astrology Readings</option>
+          <option>Aura Photography</option>
+          <option>Breathwork</option>
+          <option>Chakra Balancing</option>
+          <option>Dream Interpretation</option>
+          <option>Energetic Signature</option>
+          <option>Magdalene Reiki</option>
+          <option>Reiki Energy Healing</option>
+          <option>Sound Alchemy</option>
+          <option>Spirit Guide Conversations</option>
+          <option>Tarot & Oracle Readings</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="date">Preferred Date</label>
+          <input id="date" type="date">
+        </div>
+        <div class="form-row">
+          <label for="notes">Notes</label>
+          <textarea id="notes" placeholder="Tell us a little about what you're seeking..."></textarea>
+        </div>
+        <button type="submit" class="btn">Request Session</button>
+        <p class="form-mock-note small-note" style="display:none; margin-top:16px;"></p>
+      </form>
+    </div>
+  </section>
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <a href="index.html" class="logo-text">Spacio Dual</a>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="practitioners.html">Practitioners</a>
+        <a href="resources.html">Resources</a>
+        <a href="book.html">Book a Session</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/SajeSanctuary" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M13 22v-9h3l1-4h-4V6.5C13 5.4 13.6 5 14.7 5H17V1.2C16.6 1.1 15.3 1 13.9 1 11 1 9 2.8 9 6v3H6v4h3v9h4z"/></svg></a>
+        <a href="https://www.instagram.com/sajesanctuary/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
+      </div>
+      <p class="footer-fine">St. Thomas, US Virgin Islands &middot; &copy; Spacio Dual. Fan-made clone for educational/demo purposes — not the official site.</p>
+    </div>
+  </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
