@@ -272,7 +272,7 @@ HOME_DISCOVER = [
 HOME_DISCOVER_ES = [
     dict(eyebrow="Descubre", title="Spacio Dual", photo="earth-hands.png", icon="akashic.png",
          text=[
-             "Spaciodual.us es donde dos dimensiones convergen: la luz y la sombra, el cuerpo y el alma, lo consciente y lo inconsciente. Es un contenedor sagrado donde exploramos la dualidad inherente al ser humano — no para resolverla, sino para habitarla con consciencia y amor.",
+             "Spacio Dual es donde dos dimensiones convergen: la luz y la sombra, el cuerpo y el alma, lo consciente y lo inconsciente. Es un contenedor sagrado donde exploramos la dualidad inherente al ser humano — no para resolverla, sino para habitarla con consciencia y amor.",
              "Aquí no hay un camino prescrito. El proceso es orgánico, único para cada ser. Patria acompaña desde la escucha profunda y sin juicio, creando un espacio donde todo lo que eres tiene cabida: tus sombras, tus luces, tus contradicciones, tu grandeza.",
          ],
          link="book.html", link_text="Reserva tu Sesión"),
