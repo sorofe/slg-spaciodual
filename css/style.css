@@ -1,7 +1,7 @@
 /* =========================================================
-   Saje Sanctuary — clone design system
+   Spaciodual.us — clone design system
    Fonts: "Cormorant Garamond" (display/headings, stand-in for
-   the site's proprietary "Saje"/"SajeHeading" webfonts) +
+   the original site's proprietary display webfonts) +
    "Cardo" (body/nav, exact match to the live site).
    ========================================================= */
 
@@ -130,7 +130,7 @@ p { margin: 0 0 18px; color: var(--color-ink-soft); }
   color: var(--color-white);
 }
 
-.main-nav { display: flex; align-items: center; gap: 40px; }
+.main-nav { display: flex; align-items: center; gap: 28px; flex-wrap: nowrap; }
 .nav-link {
   font-size: 0.95rem;
   letter-spacing: 1px;
@@ -138,6 +138,7 @@ p { margin: 0 0 18px; color: var(--color-ink-soft); }
   padding: 6px 0;
   border-bottom: 1px solid transparent;
   position: relative;
+  white-space: nowrap;
 }
 .nav-link:hover { border-bottom-color: currentColor; }
 
@@ -388,7 +389,7 @@ section { padding: 100px 0; }
 .small-note { font-size: 0.8rem; color: #999; }
 
 /* Responsive ------------------------------------------------------------ */
-@media (max-width: 900px) {
+@media (max-width: 1040px) {
   .main-nav {
     position: fixed;
     inset: 0;

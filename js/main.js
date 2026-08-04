@@ -1,4 +1,4 @@
-// Saje Sanctuary clone — shared header/nav behavior
+// Spaciodual.us clone — shared header/nav behavior
 document.addEventListener('DOMContentLoaded', function () {
   var header = document.querySelector('.site-header');
   var toggle = document.querySelector('.nav-toggle');

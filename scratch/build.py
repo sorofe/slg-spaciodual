@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generates the static Spacio Dual clone (HTML files) from content
+"""Generates the static Spaciodual.us clone (HTML files) from content
 scraped into scratch/content/. Run from anywhere; writes into the project
 root (one level above this script's folder). Pure stdlib.
 
@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-BRAND_NAME = "Spacio Dual"
+BRAND_NAME = "Spaciodual.us"
 
 NAV_LABELS = {
     "en": dict(home="Home", services="Services & Offerings", practitioners="Practitioners",
@@ -133,7 +133,7 @@ OFFERINGS = {
             "Auras are the energy maps of our souls. The auric field is the vibration or energetic space that surrounds a person or object and can be viewed by the eye as luminous colourful shades.",
             "The human aura is both a colorful energy field and a reflection of the subtle life energies within the body. Auras are an energetic atmosphere that resides around every living thing including human beings, plants, animals, and inanimate objects.",
             "Aura Photography captures the colorful essence of our subtle spirit in real-time by utilizing biofeedback technology via a hand/body sensor measuring device, encompassing a comprehensive session detailing what energies are present in your auric field.",
-            "We invite you to explore the magic of your personal auric signature! Visit us at Spacio Dual to book an Aura Photography session with Gabrielle, our aura photography facilitator!",
+            "We invite you to explore the magic of your personal auric signature! Visit us at Spaciodual.us to book an Aura Photography session with Gabrielle, our aura photography facilitator!",
         ],
         cta="Book an Aura Photography Session",
     ),
@@ -144,7 +144,7 @@ OFFERINGS = {
             "Breathwork is a form of meditation that uses accelerated breathing to achieve alternative and elevated states of consciousness. This altered state allows the practitioner to explore their inner realm of consciousness and achieve healing.",
             "We breathe all day, every day, yet most of us don’t pay much attention to our breathing. The goal of breathwork meditation is to disrupt egoic patterning by breathing in a specific way, saturating the cells with oxygen and creating heightened physical, mental and energetic responses.",
             "Breathwork sessions are led by a qualified guide who walks participants through the experience, learning to breathe with the diaphragm and abdominal muscles instead of shallow breathing patterns.",
-            "Breathwork is appropriate for anyone and can be done individually or in a group. Experience your breath like never before with a breathwork event at Spacio Dual!",
+            "Breathwork is appropriate for anyone and can be done individually or in a group. Experience your breath like never before with a breathwork event at Spaciodual.us!",
         ],
         cta="Book a Breathwork Session",
     ),
@@ -270,9 +270,9 @@ HOME_DISCOVER = [
 ]
 
 HOME_DISCOVER_ES = [
-    dict(eyebrow="Descubre", title="Descubre Spacio Dual", photo="earth-hands.png", icon="akashic.png",
+    dict(eyebrow="Descubre", title="Descubre Spaciodual.us", photo="earth-hands.png", icon="akashic.png",
          text=[
-             "Spacio Dual es el espacio donde dos dimensiones convergen: la luz y la sombra, el cuerpo y el alma, lo consciente y lo inconsciente. Es un contenedor sagrado donde exploramos la dualidad inherente al ser humano — no para resolverla, sino para habitarla con consciencia y amor.",
+             "Spaciodual.us es el espacio donde dos dimensiones convergen: la luz y la sombra, el cuerpo y el alma, lo consciente y lo inconsciente. Es un contenedor sagrado donde exploramos la dualidad inherente al ser humano — no para resolverla, sino para habitarla con consciencia y amor.",
              "Aquí no hay un camino prescrito. El proceso es orgánico, único para cada ser. Patria acompaña desde la escucha profunda y sin juicio, creando un espacio donde todo lo que eres tiene cabida: tus sombras, tus luces, tus contradicciones, tu grandeza.",
          ],
          link="book.html", link_text="Reserva tu Sesión"),
@@ -356,8 +356,8 @@ def render_header(depth=0, solid=False, active="", lang="en"):
         <a href="{prefix}book.html" class="nav-link">{nav['book']}</a>
       </nav>
       <div class="header-icons">
-        <a href="https://www.facebook.com/SajeSanctuary" class="icon-link" aria-label="Facebook" target="_blank" rel="noopener">{SVG_ICONS['facebook']}</a>
-        <a href="https://www.instagram.com/sajesanctuary/" class="icon-link" aria-label="Instagram" target="_blank" rel="noopener">{SVG_ICONS['instagram']}</a>
+        <a href="#" class="icon-link" aria-label="Facebook" target="_blank" rel="noopener">{SVG_ICONS['facebook']}</a>
+        <a href="#" class="icon-link" aria-label="Instagram" target="_blank" rel="noopener">{SVG_ICONS['instagram']}</a>
         <a href="{prefix}book.html" class="icon-link" aria-label="Cart">{SVG_ICONS['cart']}</a>
       </div>
       <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -378,8 +378,8 @@ def render_footer(depth=0, lang="en"):
         <a href="{prefix}book.html">{nav['book']}</a>
       </nav>
       <div class="footer-social">
-        <a href="https://www.facebook.com/SajeSanctuary" aria-label="Facebook" target="_blank" rel="noopener">{SVG_ICONS['facebook']}</a>
-        <a href="https://www.instagram.com/sajesanctuary/" aria-label="Instagram" target="_blank" rel="noopener">{SVG_ICONS['instagram']}</a>
+        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">{SVG_ICONS['facebook']}</a>
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">{SVG_ICONS['instagram']}</a>
       </div>
       <p class="footer-fine">{FOOTER_FINE[lang]}</p>
     </div>
@@ -438,7 +438,7 @@ def build_home(lang="en"):
     discover_html = "\n".join(discover_rows)
 
     if lang == "es":
-        body = f"""  <section class="hero" style="background-image:url('images/saje-st-thomas3.jpg')">
+        body = f"""  <section class="hero" style="background-image:url('images/hero-sanctuary.jpg')">
     <div class="hero-content">
       <div class="hero-sub">para tu</div>
       <h1>{BRAND_NAME}</h1>
@@ -471,7 +471,7 @@ def build_home(lang="en"):
         title = f"{BRAND_NAME}: St. Thomas, Islas Vírgenes de EE. UU. | Santuario Metafísico y Esotérico (Clon)"
         description = f"Clon visual no oficial de {BRAND_NAME} — un santuario metafísico y esotérico de sanación en St. Thomas, Islas Vírgenes de EE. UU."
     else:
-        body = f"""  <section class="hero" style="background-image:url('images/saje-st-thomas3.jpg')">
+        body = f"""  <section class="hero" style="background-image:url('images/hero-sanctuary.jpg')">
     <div class="hero-content">
       <div class="hero-sub">for the</div>
       <h1>{BRAND_NAME}</h1>
@@ -622,7 +622,7 @@ def build_offering(slug, data):
 {store_note}"""
 
     html = page_shell(
-        f"{data['title']} | Spacio Dual (Clone)",
+        f"{data['title']} | {BRAND_NAME} (Clone)",
         data["tagline"],
         depth, body, solid_header=True,
     )
@@ -648,7 +648,7 @@ def build_practitioners():
     body = f"""  <section class="hero page-hero" style="background-image:url('images/unsplash-image-h1x7EEaYINQ.jpg')">
     <div class="hero-content">
       <h1>Our Practitioners</h1>
-      <p class="hero-sub" style="font-size:1.1rem">The Spacio Dual Team</p>
+      <p class="hero-sub" style="font-size:1.1rem">The {BRAND_NAME} Team</p>
     </div>
   </section>
 
@@ -661,8 +661,8 @@ def build_practitioners():
   </section>"""
 
     html = page_shell(
-        "Practitioners | Spacio Dual (Clone)",
-        "Meet the healers, facilitators and guides of Spacio Dual.",
+        f"Practitioners | {BRAND_NAME} (Clone)",
+        f"Meet the healers, facilitators and guides of {BRAND_NAME}.",
         depth, body, solid_header=True,
     )
     (ROOT / "practitioners.html").write_text(html, encoding="utf-8")
@@ -697,7 +697,7 @@ def build_resources():
   </section>""")
     sections_html = "\n".join(sections)
 
-    body = f"""  <section class="hero page-hero" style="background-image:url('images/saje-st-thomas3.jpg')">
+    body = f"""  <section class="hero page-hero" style="background-image:url('images/hero-sanctuary.jpg')">
     <div class="hero-content">
       <h1>Resources</h1>
       <p class="hero-sub" style="font-size:1.1rem">Herbalism &amp; Crystal Wisdom</p>
@@ -712,8 +712,8 @@ def build_resources():
   </section>"""
 
     html = page_shell(
-        "Resources | Spacio Dual (Clone)",
-        "Herbalism and crystal resources from Spacio Dual.",
+        f"Resources | {BRAND_NAME} (Clone)",
+        f"Herbalism and crystal resources from {BRAND_NAME}.",
         depth, body, solid_header=True,
     )
     (ROOT / "resources.html").write_text(html, encoding="utf-8")
@@ -726,7 +726,7 @@ def build_book():
     depth = 0
     offering_options = "\n".join(f'          <option>{title}</option>' for title, _ in OFFERING_LINKS)
 
-    body = f"""  <section class="hero page-hero" style="background-image:url('images/saje-st-thomas3.jpg')">
+    body = f"""  <section class="hero page-hero" style="background-image:url('images/hero-sanctuary.jpg')">
     <div class="hero-content">
       <h1>Book a Session</h1>
       <p class="hero-sub" style="font-size:1.1rem">Please fill out the form below to request a session</p>
@@ -766,7 +766,7 @@ def build_book():
   </section>"""
 
     html = page_shell(
-        "Book a Session | Spacio Dual (Clone)",
+        f"Book a Session | {BRAND_NAME} (Clone)",
         "Static demo booking page — no real scheduling.",
         depth, body, solid_header=True,
     )

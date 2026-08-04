@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Local preview server for the Saje Sanctuary clone.
+"""Local preview server for the Spaciodual.us clone.
 
 Usage:
     python3 serve.py            # serves on http://localhost:8000
@@ -23,7 +23,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 def main():
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         url = f"http://localhost:{PORT}/index.html"
-        print(f"Serving Saje Sanctuary clone at {url}  (Ctrl+C to stop)")
+        print(f"Serving Spaciodual.us clone at {url}  (Ctrl+C to stop)")
         try:
             webbrowser.open(url)
         except Exception:
