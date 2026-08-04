@@ -270,9 +270,9 @@ HOME_DISCOVER = [
 ]
 
 HOME_DISCOVER_ES = [
-    dict(eyebrow="Descubre", title="Descubre Spaciodual.us", photo="earth-hands.png", icon="akashic.png",
+    dict(eyebrow="Descubre", title="Spaciodual.us", photo="earth-hands.png", icon="akashic.png",
          text=[
-             "Spaciodual.us es el espacio donde dos dimensiones convergen: la luz y la sombra, el cuerpo y el alma, lo consciente y lo inconsciente. Es un contenedor sagrado donde exploramos la dualidad inherente al ser humano — no para resolverla, sino para habitarla con consciencia y amor.",
+             "Spaciodual.us es donde dos dimensiones convergen: la luz y la sombra, el cuerpo y el alma, lo consciente y lo inconsciente. Es un contenedor sagrado donde exploramos la dualidad inherente al ser humano — no para resolverla, sino para habitarla con consciencia y amor.",
              "Aquí no hay un camino prescrito. El proceso es orgánico, único para cada ser. Patria acompaña desde la escucha profunda y sin juicio, creando un espacio donde todo lo que eres tiene cabida: tus sombras, tus luces, tus contradicciones, tu grandeza.",
          ],
          link="book.html", link_text="Reserva tu Sesión"),
@@ -297,12 +297,6 @@ HOME_DISCOVER_ES = [
     dict(eyebrow="Descubre", title="Consejería Espiritual", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
          text="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
          link="book.html", link_text="Más Sobre Consejería"),
-    dict(eyebrow="Descubre", title="El Tarot", photo="A7EE8061-C537-451D-8A5F-516D34B1D947.PNG", icon="thetarot.png",
-         text="Una baraja de Tarot es un conjunto clásico de 78 cartas divididas en arcanos mayores y menores. Las lecturas de Tarot y Oráculo pueden ayudarte a ganar claridad y conexión con la respuesta que estás buscando.",
-         link="offerings/tarot-oracle-readings.html", link_text="Conoce más sobre el Tarot"),
-    dict(eyebrow="Descubre", title="Astrología", photo="unsplash-image-U-Kty6HxcQc.jpg", icon="astrology.png",
-         text="Tu Carta Astral es un mapa personal que ilumina tu vocación, para que puedas desbloquear todo tu potencial y comprender los momentos significativos que te guían.",
-         link="offerings/astrology-readings.html", link_text="Conoce más sobre la Astrología"),
 ]
 
 SECTION_DIVIDER = (
