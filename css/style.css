@@ -250,11 +250,10 @@ section { padding: 100px 0; }
   text-align: center;
 }
 
-/* Intro / "musings" section: watermark, script headline, gold divider ------ */
+/* Intro / "musings" section: watermark, script headline ------------------ */
 .intro-section {
   position: relative;
   overflow: hidden;
-  padding-bottom: 110px;
 }
 .intro-bg {
   position: absolute;
@@ -290,15 +289,23 @@ section { padding: 100px 0; }
 }
 .intro-caption .underline { text-decoration: underline; text-underline-offset: 4px; }
 
-.gold-divider {
-  position: absolute;
-  bottom: 26px;
-  left: 50%;
-  transform: translateX(-50%);
+/* Full-width gold section divider ----------------------------------------- */
+.section-divider {
   display: flex;
   align-items: center;
+  width: 100%;
+  background: var(--color-cream);
 }
-.gold-divider svg { display: block; stroke: var(--color-gold); }
+.section-divider .divider-line { flex: 1 1 auto; height: 1px; background: var(--color-gold); }
+.section-divider .divider-triangle {
+  flex: 0 0 auto;
+  width: 0;
+  height: 0;
+  margin: 0 18px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 15px solid var(--color-gold);
+}
 
 .discover-row {
   display: grid;

@@ -305,13 +305,12 @@ HOME_DISCOVER_ES = [
          link="offerings/astrology-readings.html", link_text="Conoce más sobre la Astrología"),
 ]
 
-GOLD_DIVIDER = (
-    '<svg width="220" height="30" viewBox="0 0 220 30" xmlns="http://www.w3.org/2000/svg" '
-    'fill="none" stroke-width="1">'
-    '<line x1="0" y1="15" x2="90" y2="15"/>'
-    '<polygon points="100,6 120,6 110,24"/>'
-    '<line x1="130" y1="15" x2="220" y2="15"/>'
-    '</svg>'
+SECTION_DIVIDER = (
+    '<div class="section-divider" aria-hidden="true">'
+    '<span class="divider-line"></span>'
+    '<span class="divider-triangle"></span>'
+    '<span class="divider-line"></span>'
+    '</div>'
 )
 
 SVG_ICONS = {
@@ -448,18 +447,19 @@ def build_home(lang="en"):
   <section class="section-white intro-section">
     <div class="intro-bg" aria-hidden="true"></div>
     <div class="container intro-block">
-      <h2 class="script-heading">Musa metafísica para el místico moderno</h2>
-      <p class="intro-caption">Comienza tu travesía y disfruta de una variedad de modalidades energéticas, holísticas y espiritualmente transformadoras, ofrecidas para guiarte y acompañarte hacia tu más elevado propósito en esta encarnación. Un espacio seguro donde el alma es escuchada y el cuerpo recuerda su sabiduría.</p>
+      <h2 class="script-heading">El alquimista interior que abre puerta hacia el infinito</h2>
+      <p class="intro-caption">Comienza tu viaje trascendental hacia una nueva conciencia de ser, estar y sentir. Dentro de un espacio seguro, íntegro y auténtico con diversas modalidades holísticas y energéticas que te ayudarán a restaurar el balance natural de tu esencia y presencia divina.</p>
       <a href="book.html" class="btn">Comienza tu Viaje</a>
     </div>
-    <div class="gold-divider" aria-hidden="true">{GOLD_DIVIDER}</div>
   </section>
+  {SECTION_DIVIDER}
 
   <section class="section-white section-tight">
     <div class="container">
 {discover_html}
     </div>
   </section>
+  {SECTION_DIVIDER}
 
   <section class="section-dark text-center">
     <div class="container">
@@ -467,7 +467,8 @@ def build_home(lang="en"):
       <p>Reserva una sesión con nuestras practicantes y comienza el camino de regreso a ti mismo.</p>
       <a href="book.html" class="btn">Reservar una Sesión</a>
     </div>
-  </section>"""
+  </section>
+  {SECTION_DIVIDER}"""
         title = BRAND_NAME
         description = f"Clon visual no oficial de {BRAND_NAME} — un santuario metafísico y esotérico de sanación en St. Thomas, Islas Vírgenes de EE. UU."
     else:
@@ -481,19 +482,19 @@ def build_home(lang="en"):
   <section class="section-white intro-section">
     <div class="intro-bg" aria-hidden="true"></div>
     <div class="container intro-block">
-      <h2 class="script-heading">Metaphysical Musings for the Modern Mystic</h2>
-      <p class="intro-caption">Our goal is to provide a platform that models authenticity, integrity and the highest forms of energy while working alongside our community to heal, awaken and remember our connection to the earth, each other, and our <span class="underline">inherent divinity</span>.</p>
+      <h2 class="script-heading">The Inner Alchemist Who Opens the Door to the Infinite</h2>
+      <p class="intro-caption">Begin your transcendental journey toward a new consciousness of being, presence and feeling. Within a safe, honest and authentic space, discover a variety of holistic and energetic modalities that will help you restore the natural balance of your essence and divine presence.</p>
       <a href="book.html" class="btn">Begin Your Journey</a>
-      <p class="mt-40">Enjoy a variety of energetic, esoteric and spiritually empowering modalities offered to help guide and usher you into your highest purpose in this incarnation.</p>
     </div>
-    <div class="gold-divider" aria-hidden="true">{GOLD_DIVIDER}</div>
   </section>
+  {SECTION_DIVIDER}
 
   <section class="section-white section-tight">
     <div class="container">
 {discover_html}
     </div>
   </section>
+  {SECTION_DIVIDER}
 
   <section class="section-dark text-center">
     <div class="container">
@@ -501,7 +502,8 @@ def build_home(lang="en"):
       <p>Book a session with one of our practitioners and start your journey home to yourself.</p>
       <a href="book.html" class="btn">Book a Session</a>
     </div>
-  </section>"""
+  </section>
+  {SECTION_DIVIDER}"""
         title = BRAND_NAME
         description = f"Unofficial visual clone of {BRAND_NAME} — a metaphysical and esoteric healing sanctuary in St. Thomas, USVI."
 
