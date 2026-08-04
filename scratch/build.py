@@ -341,7 +341,7 @@ def render_header(depth=0, solid=False, active="", lang="en"):
     always_solid = ' data-always-solid="true"' if solid else ""
     return f"""  <header class="site-header{solid_class}"{always_solid}>
     <div class="header-inner">
-      <a href="{prefix}index.html" class="logo-text">{BRAND_NAME}</a>
+      <a href="{prefix}book.html" class="logo-text">{nav['book']}</a>
       <nav class="main-nav">
         <a href="{prefix}index.html" class="nav-link">{nav['home']}</a>
         <div class="nav-item-dropdown">
@@ -441,7 +441,7 @@ def build_home(lang="en"):
         body = f"""  <section class="hero" style="background-image:url('images/hero-sanctuary.jpg')">
     <div class="hero-content">
       <div class="hero-sub">para tu</div>
-      <h1>{BRAND_NAME}</h1>
+      <h1>Spacio Dual</h1>
     </div>
   </section>
 
@@ -474,7 +474,7 @@ def build_home(lang="en"):
         body = f"""  <section class="hero" style="background-image:url('images/hero-sanctuary.jpg')">
     <div class="hero-content">
       <div class="hero-sub">for the</div>
-      <h1>{BRAND_NAME}</h1>
+      <h1>Spacio Dual</h1>
     </div>
   </section>
 
