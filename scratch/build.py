@@ -468,7 +468,7 @@ def build_home(lang="en"):
       <a href="book.html" class="btn">Reservar una Sesión</a>
     </div>
   </section>"""
-        title = f"{BRAND_NAME}: St. Thomas, Islas Vírgenes de EE. UU. | Santuario Metafísico y Esotérico (Clon)"
+        title = BRAND_NAME
         description = f"Clon visual no oficial de {BRAND_NAME} — un santuario metafísico y esotérico de sanación en St. Thomas, Islas Vírgenes de EE. UU."
     else:
         body = f"""  <section class="hero" style="background-image:url('images/hero-sanctuary.jpg')">
@@ -502,7 +502,7 @@ def build_home(lang="en"):
       <a href="book.html" class="btn">Book a Session</a>
     </div>
   </section>"""
-        title = f"{BRAND_NAME}: St. Thomas, US Virgin Islands | Metaphysical &amp; Esoteric Sanctuary (Clone)"
+        title = BRAND_NAME
         description = f"Unofficial visual clone of {BRAND_NAME} — a metaphysical and esoteric healing sanctuary in St. Thomas, USVI."
 
     html = page_shell(title, description, depth, body, solid_header=False, lang=lang)
@@ -622,7 +622,7 @@ def build_offering(slug, data):
 {store_note}"""
 
     html = page_shell(
-        f"{data['title']} | {BRAND_NAME} (Clone)",
+        BRAND_NAME,
         data["tagline"],
         depth, body, solid_header=True,
     )
@@ -661,7 +661,7 @@ def build_practitioners():
   </section>"""
 
     html = page_shell(
-        f"Practitioners | {BRAND_NAME} (Clone)",
+        BRAND_NAME,
         f"Meet the healers, facilitators and guides of {BRAND_NAME}.",
         depth, body, solid_header=True,
     )
@@ -712,7 +712,7 @@ def build_resources():
   </section>"""
 
     html = page_shell(
-        f"Resources | {BRAND_NAME} (Clone)",
+        BRAND_NAME,
         f"Herbalism and crystal resources from {BRAND_NAME}.",
         depth, body, solid_header=True,
     )
@@ -766,7 +766,7 @@ def build_book():
   </section>"""
 
     html = page_shell(
-        f"Book a Session | {BRAND_NAME} (Clone)",
+        BRAND_NAME,
         "Static demo booking page — no real scheduling.",
         depth, body, solid_header=True,
     )
