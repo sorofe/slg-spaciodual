@@ -282,12 +282,6 @@ HOME_DISCOVER_ES = [
              "Te acompañamos a identificar patrones de comportamiento, diseñar metas con intención y construir el puente entre quién eres hoy y quién deseas ser. Sin guiones. Sin fórmulas. Solo presencia.",
          ],
          link="book.html", link_text="Más Sobre Coaching"),
-    dict(eyebrow="Descubre", title="La Consciencia Corporal", photo="mary-jesus-procession.jpeg", icon="15.png",
-         text=[
-             "La salud física, emocional y espiritual del cuerpo depende del libre flujo de energía en su interior. Los chakras son los portales a través de los cuales esa energía circula en nuestro avatar. Los 7 chakras son las 7 ruedas de energía de nuestro cuerpo, centros ubicados desde los pies hasta la coronilla del cráneo.",
-             "A través del acompañamiento consciente, exploramos cómo los bloqueos energéticos se manifiestan en el cuerpo — como fatiga, ansiedad, dolor o enfermedad — y trabajamos juntos para restaurar el flujo natural de la vida. El cuerpo siempre sabe. Solo necesita que lo escuchen.",
-         ],
-         link="offerings/chakra-balancing.html", link_text="Más sobre los Chakras"),
     dict(eyebrow="Descubre", title="El Reiki y La Energía", photo="reiki-energy-woman.png", icon="4.png",
          text=[
              "El Reiki es una práctica energética que canaliza la fuente inagotable de sanación disponible en el reino liminal. La energía puede estancarse en el cuerpo donde ha habido lesión física o angustia emocional. Con el tiempo, estos bloqueos energéticos pueden manifestarse como enfermedad, ansiedad, depresión, fatiga o dolencia.",
