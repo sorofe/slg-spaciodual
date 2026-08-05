@@ -283,10 +283,7 @@ HOME_DISCOVER_ES = [
          ],
          link="book.html", link_text="Más Sobre Coaching"),
     dict(eyebrow="Descubre", title="El Reiki y La Energía", photo="reiki-energy-woman.png", icon="4.png",
-         text=[
-             "El Reiki es una práctica energética que canaliza la fuente inagotable de sanación disponible en el reino liminal. La energía puede estancarse en el cuerpo donde ha habido lesión física o angustia emocional. Con el tiempo, estos bloqueos energéticos pueden manifestarse como enfermedad, ansiedad, depresión, fatiga o dolencia.",
-             "Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — aura, chakras, cuerpo etérico — para eliminar bloqueos y fomentar una alineación poderosa. El cuerpo posee una capacidad inherente de sanarse a sí mismo. El Reiki la despierta.",
-         ],
+         text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — para eliminar bloqueos y fomentar una alineación poderosa. Trabaja en tus campos energéticos, reconoce tu capacidad sanadora e integra lo que la naturaleza te ofrece.",
          link="offerings/reiki-energy-healing.html", link_text="Más sobre el Reiki"),
     dict(eyebrow="Descubre", title="Consejería Espiritual", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
          text="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
