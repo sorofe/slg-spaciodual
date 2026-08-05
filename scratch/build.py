@@ -13,11 +13,11 @@ ROOT = Path(__file__).resolve().parent.parent
 BRAND_NAME = "Spaciodual.us"
 
 NAV_LABELS = {
-    "en": dict(home="Home", services="Services & Offerings", practitioners="Practitioners",
-               resources="Resources", book="Book a Session", mentorship="Mentorship (coming soon)",
+    "en": dict(home="Home", services="Services & Offerings", practitioners="About",
+               resources="Contact", book="Book a Session", mentorship="Mentorship (coming soon)",
                back="← Back to Offerings"),
-    "es": dict(home="Inicio", services="Servicios y Ofrendas", practitioners="Practicantes",
-               resources="Recursos", book="Reservar una Sesión", mentorship="Mentoría (próximamente)",
+    "es": dict(home="Inicio", services="Servicios y Ofrendas", practitioners="Nosotros",
+               resources="Contacto", book="Reservar una Sesión", mentorship="Mentoría (próximamente)",
                back="← Volver a Servicios"),
 }
 
@@ -252,7 +252,7 @@ HOME_DISCOVER = [
          link="offerings/magdalene-reiki.html", link_text="Learn more about Magdalene Reiki"),
     dict(eyebrow="Discover", title="Herbal Healing", photo="67355A69-A421-4324-B0E8-346A4E21E172.jpeg", icon="4.png",
          text="Herbal Knowledge that was once common in every household is now a rare commodity. By crafting herbal teas, tinctures, compresses, salves, and more we can take control of our health in a holistic and organic way.",
-         link="resources.html", link_text="Learn more about Herbal Healing"),
+         link="contacto.html", link_text="Learn more about Herbal Healing"),
     dict(eyebrow="Discover", title="Sound Healing", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
          text="Sound Baths are an ancient form of deep meditation that includes various ambient sounds played live, using crystal bowls, gemstone bowls, cymbals, chimes and other instruments to cleanse the soul.",
          link="offerings/sound-alchemy.html", link_text="Learn more about Sound Healing"),
@@ -265,28 +265,28 @@ HOME_DISCOVER = [
 ]
 
 HOME_DISCOVER_ES = [
-    dict(eyebrow="Descubre", title="Spacio Dual", photo="earth-hands.png", icon="akashic.png",
+    dict(eyebrow="Descubre", title="Spacio Dual", slug="spacio-dual", photo="earth-hands.png", icon="akashic.png",
          text=[
              "Spacio Dual es donde dos dimensiones convergen: la luz y la sombra, el cuerpo y el alma, lo consciente y lo inconsciente. Es un contenedor sagrado donde exploramos la dualidad inherente al ser humano — no para resolverla, sino para habitarla con consciencia y amor.",
              "Aquí no hay un camino prescrito. El proceso es orgánico, único para cada ser. Patria acompaña desde la escucha profunda y sin juicio, creando un espacio donde todo lo que eres tiene cabida: tus sombras, tus luces, tus contradicciones, tu grandeza.",
          ],
          link="book.html", link_text="Reserva tu Sesión"),
-    dict(eyebrow="Descubre", title="Coaching de Vida", photo="buddha-monk.png", icon="5.png",
+    dict(eyebrow="Descubre", title="Coaching de Vida", slug="coaching-de-vida", photo="buddha-monk.png", icon="5.png",
          text=[
              "Una conversación transformadora que te ayuda a ver con claridad lo que antes estaba nublado. No se trata de dar respuestas — se trata de hacer las preguntas correctas para que tú mismo descubras las tuyas.",
              "Te acompañamos a identificar patrones de comportamiento, diseñar metas con intención y construir el puente entre quién eres hoy y quién deseas ser. Sin guiones. Sin fórmulas. Solo presencia.",
          ],
          link="book.html", link_text="Más Sobre Coaching"),
-    dict(eyebrow="Descubre", title="Consejería Espiritual", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
+    dict(eyebrow="Descubre", title="Consejería Espiritual", slug="consejeria-espiritual", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
          text="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
          link="book.html", link_text="Más Sobre Consejería"),
-    dict(eyebrow="Descubre", title="Reiki y Energía", photo="reiki-energy-woman.png", icon="4.png",
+    dict(eyebrow="Descubre", title="Reiki y Energía", slug="reiki-energia", photo="reiki-energy-woman.png", icon="4.png",
          text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — para eliminar bloqueos y fomentar una alineación poderosa. Trabaja en tus campos energéticos, reconoce tu capacidad sanadora e integra lo que la naturaleza te ofrece.",
          link="offerings/reiki-energy-healing.html", link_text="Más sobre el Reiki"),
-    dict(eyebrow="Descubre", title="Meditación", photo="beach-meditation.png", icon="15.png",
+    dict(eyebrow="Descubre", title="Meditación", slug="meditacion", photo="beach-meditation.png", icon="15.png",
          text="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor. Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención. Así dejaremos de buscar respuestas en el exterior pues comprendemos que todo está dentro de nosotros mismos.",
          link="book.html", link_text="Más Sobre Meditación"),
-    dict(eyebrow="Descubre", title="Hábitos", photo="food-bowl.png", icon="4.png",
+    dict(eyebrow="Descubre", title="Hábitos", slug="habitos", photo="food-bowl.png", icon="4.png",
          text="Se dice que somos seres de hábitos, sin embargo, nunca nos detenemos a observar que hay detrás de esa rutina, de ese consumo desmedido, de esa conformidad y ese cansancio. Cuando sabes el por qué, cuando puedes identificar a qué respondes, comienzas a transformarte con un enfoque de amor propio y disciplina.",
          link="book.html", link_text="Más Sobre Hábitos"),
 ]
@@ -318,9 +318,13 @@ def rel(depth, path):
 def render_header(depth=0, solid=False, active="", lang="en"):
     prefix = rel(depth, "")
     nav = NAV_LABELS[lang]
+    rows_data = HOME_DISCOVER_ES  # mega-menu always reflects the live home page sections
     dropdown_items = "\n".join(
-        f'          <a href="{prefix}offerings/{slug}.html">{title}</a>'
-        for title, slug in OFFERING_LINKS
+        f'''          <a href="{prefix}index.html#{d['slug']}" class="dropdown-tile">
+            {img(depth, d['photo'], d['title'], cls="dropdown-tile-img")}
+            <span>{d['title']}</span>
+          </a>'''
+        for d in rows_data if d.get("slug")
     )
     solid_class = " is-solid" if solid else ""
     always_solid = ' data-always-solid="true"' if solid else ""
@@ -331,14 +335,12 @@ def render_header(depth=0, solid=False, active="", lang="en"):
         <a href="{prefix}index.html" class="nav-link">{nav['home']}</a>
         <div class="nav-item-dropdown">
           <a href="#" class="nav-link">{nav['services']}</a>
-          <div class="dropdown-panel">
+          <div class="dropdown-panel dropdown-panel--grid">
 {dropdown_items}
-            <a href="#" class="is-disabled" style="opacity:.5">{nav['mentorship']}</a>
           </div>
         </div>
-        <a href="{prefix}practitioners.html" class="nav-link">{nav['practitioners']}</a>
-        <a href="{prefix}resources.html" class="nav-link">{nav['resources']}</a>
-        <a href="{prefix}book.html" class="nav-link">{nav['book']}</a>
+        <a href="{prefix}nosotros.html" class="nav-link">{nav['practitioners']}</a>
+        <a href="{prefix}contacto.html" class="nav-link">{nav['resources']}</a>
       </nav>
       <div class="header-icons">
         <a href="#" class="icon-link" aria-label="Facebook" target="_blank" rel="noopener">{SVG_ICONS['facebook']}</a>
@@ -358,8 +360,8 @@ def render_footer(depth=0, lang="en"):
       <a href="{prefix}index.html" class="logo-text">{BRAND_NAME}</a>
       <nav class="footer-nav">
         <a href="{prefix}index.html">{nav['home']}</a>
-        <a href="{prefix}practitioners.html">{nav['practitioners']}</a>
-        <a href="{prefix}resources.html">{nav['resources']}</a>
+        <a href="{prefix}nosotros.html">{nav['practitioners']}</a>
+        <a href="{prefix}contacto.html">{nav['resources']}</a>
         <a href="{prefix}book.html">{nav['book']}</a>
       </nav>
       <div class="footer-social">
@@ -410,7 +412,8 @@ def build_home(lang="en"):
         reverse = " reverse" if i % 2 == 1 else ""
         paragraphs = d['text'] if isinstance(d['text'], list) else [d['text']]
         text_html = "\n          ".join(f"<p>{p}</p>" for p in paragraphs)
-        discover_rows.append(f"""      <div class="discover-row{reverse}">
+        id_attr = f' id="{d["slug"]}"' if d.get("slug") else ""
+        discover_rows.append(f"""      <div class="discover-row{reverse}"{id_attr}>
         <div class="discover-media">{img(depth, d['photo'], d['title'])}</div>
         <div class="discover-text">
           <span class="eyebrow">{d['eyebrow']}</span>
@@ -619,89 +622,80 @@ def build_offering(slug, data):
 # ---------------------------------------------------------------------------
 # PRACTITIONERS PAGE
 # ---------------------------------------------------------------------------
-def build_practitioners():
+def build_about():
     depth = 0
-    cards = "\n".join(f"""        <div class="card">
-          {img(depth, p['img'], p['name'])}
-          <div class="card-body">
-            <div class="card-tags">{', '.join(p['tags'][:4])}</div>
-            <h3>{p['name']}</h3>
-            <p>{p['bio']}</p>
-          </div>
-        </div>""" for p in PRACTITIONERS)
 
-    body = f"""  <section class="hero page-hero" style="background-image:url('images/unsplash-image-h1x7EEaYINQ.jpg')">
+    body = f"""  <section class="hero page-hero" style="background-image:url('images/earth-hands.png')">
     <div class="hero-content">
-      <h1>Our Practitioners</h1>
-      <p class="hero-sub" style="font-size:1.1rem">The {BRAND_NAME} Team</p>
+      <h1>Nosotros</h1>
+      <p class="hero-sub" style="font-size:1.1rem">La historia detrás de {BRAND_NAME}</p>
     </div>
   </section>
 
   <section class="section-white">
-    <div class="container">
-      <div class="grid">
-{cards}
+    <div class="container" style="max-width:760px">
+      <p>{BRAND_NAME} es donde dos dimensiones convergen: la luz y la sombra, el cuerpo y el alma, lo consciente y lo inconsciente. Es un contenedor sagrado donde exploramos la dualidad inherente al ser humano — no para resolverla, sino para habitarla con consciencia y amor.</p>
+      <p>Aquí no hay un camino prescrito. El proceso es orgánico, único para cada ser. Patria acompaña desde la escucha profunda y sin juicio, creando un espacio donde todo lo que eres tiene cabida: tus sombras, tus luces, tus contradicciones, tu grandeza.</p>
+      <p>Comienza tu viaje trascendental hacia una nueva conciencia de ser, estar y sentir. Dentro de un espacio seguro, íntegro y auténtico, ofrecemos diversas modalidades holísticas y energéticas que te ayudarán a restaurar el balance natural de tu esencia y presencia divina.</p>
+      <div class="text-center mt-40">
+        <a href="book.html" class="btn">Reserva tu Sesión</a>
       </div>
     </div>
   </section>"""
 
     html = page_shell(
         BRAND_NAME,
-        f"Meet the healers, facilitators and guides of {BRAND_NAME}.",
-        depth, body, solid_header=True,
+        f"Conoce la historia y la filosofía detrás de {BRAND_NAME}.",
+        depth, body, solid_header=True, lang="es",
     )
-    (ROOT / "practitioners.html").write_text(html, encoding="utf-8")
+    (ROOT / "nosotros.html").write_text(html, encoding="utf-8")
 
 
 # ---------------------------------------------------------------------------
 # RESOURCES PAGE
 # ---------------------------------------------------------------------------
-def build_resources():
+def build_contact():
     depth = 0
-    categories = {}
-    for r in RESOURCES:
-        categories.setdefault(r["cat"], []).append(r)
-
-    sections = []
-    for cat, items in categories.items():
-        cards = "\n".join(f"""        <div class="card">
-          {img(depth, r['img'], r['name'])}
-          <div class="card-body">
-            <div class="card-tags">{cat}</div>
-            <h3>{r['name']}</h3>
-            <p>{r['blurb']}</p>
-          </div>
-        </div>""" for r in items)
-        sections.append(f"""  <section class="section-white section-tight">
-    <div class="container">
-      <h2>{cat}</h2>
-      <div class="grid mt-40">
-{cards}
-      </div>
-    </div>
-  </section>""")
-    sections_html = "\n".join(sections)
 
     body = f"""  <section class="hero page-hero" style="background-image:url('images/hero-sanctuary.jpg')">
     <div class="hero-content">
-      <h1>Resources</h1>
-      <p class="hero-sub" style="font-size:1.1rem">Herbalism &amp; Crystal Wisdom</p>
+      <h1>Contacto</h1>
+      <p class="hero-sub" style="font-size:1.1rem">Escríbenos, con gusto te respondemos</p>
     </div>
   </section>
-{sections_html}
-  <section class="section-dark text-center">
-    <div class="container">
-      <h2>Coming Soon</h2>
-      <p>Symbolism, Ritual &amp; Ceremony, Energy and Mythology.</p>
+
+  <section class="section-white">
+    <div class="container text-center">
+      <div class="notice-badge">Este es un formulario de demostración. No se envía a ningún lado — conecta aquí tu correo, teléfono o dirección reales.</div>
+      <form class="form-mock">
+        <div class="form-row">
+          <label for="name">Nombre completo</label>
+          <input id="name" type="text" placeholder="Tu nombre">
+        </div>
+        <div class="form-row">
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" placeholder="tucorreo@ejemplo.com">
+        </div>
+        <div class="form-row">
+          <label for="phone">Teléfono (opcional)</label>
+          <input id="phone" type="tel" placeholder="Tu número de teléfono">
+        </div>
+        <div class="form-row">
+          <label for="message">Mensaje</label>
+          <textarea id="message" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Mensaje</button>
+        <p class="form-mock-note small-note" style="display:none; margin-top:16px;"></p>
+      </form>
     </div>
   </section>"""
 
     html = page_shell(
         BRAND_NAME,
-        f"Herbalism and crystal resources from {BRAND_NAME}.",
-        depth, body, solid_header=True,
+        f"Ponte en contacto con {BRAND_NAME}.",
+        depth, body, solid_header=True, lang="es",
     )
-    (ROOT / "resources.html").write_text(html, encoding="utf-8")
+    (ROOT / "contacto.html").write_text(html, encoding="utf-8")
 
 
 # ---------------------------------------------------------------------------
@@ -763,8 +757,8 @@ def main():
     for slug, data in OFFERINGS.items():
         data["title"] = data.get("title", slug)
         build_offering(slug, data)
-    build_practitioners()
-    build_resources()
+    build_about()
+    build_contact()
     build_book()
     print("Build complete.")
 
