@@ -318,36 +318,16 @@ def rel(depth, path):
 def render_header(depth=0, solid=False, active="", lang="en"):
     prefix = rel(depth, "")
     nav = NAV_LABELS[lang]
-    rows_data = HOME_DISCOVER_ES  # mega-menu always reflects the live home page sections
-    dropdown_items = "\n".join(
-        f'''          <a href="{prefix}index.html#{d['slug']}" class="dropdown-tile">
-            {img(depth, d['photo'], d['title'], cls="dropdown-tile-img")}
-            <span>{d['title']}</span>
-          </a>'''
-        for d in rows_data if d.get("slug")
-    )
     solid_class = " is-solid" if solid else ""
     always_solid = ' data-always-solid="true"' if solid else ""
     return f"""  <header class="site-header{solid_class}"{always_solid}>
     <div class="header-inner">
       <a href="{prefix}book.html" class="logo-text">{nav['book']}</a>
-      <nav class="main-nav">
-        <a href="{prefix}index.html" class="nav-link">{nav['home']}</a>
-        <div class="nav-item-dropdown">
-          <a href="#" class="nav-link">{nav['services']}</a>
-          <div class="dropdown-panel dropdown-panel--grid">
-{dropdown_items}
-          </div>
-        </div>
-        <a href="{prefix}nosotros.html" class="nav-link">{nav['practitioners']}</a>
-        <a href="{prefix}contacto.html" class="nav-link">{nav['resources']}</a>
-      </nav>
       <div class="header-icons">
         <a href="#" class="icon-link" aria-label="Facebook" target="_blank" rel="noopener">{SVG_ICONS['facebook']}</a>
         <a href="#" class="icon-link" aria-label="Instagram" target="_blank" rel="noopener">{SVG_ICONS['instagram']}</a>
         <a href="{prefix}book.html" class="icon-link" aria-label="Cart">{SVG_ICONS['cart']}</a>
       </div>
-      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>"""
 
@@ -360,6 +340,7 @@ def render_footer(depth=0, lang="en"):
       <a href="{prefix}index.html" class="logo-text">{BRAND_NAME}</a>
       <nav class="footer-nav">
         <a href="{prefix}index.html">{nav['home']}</a>
+        <a href="{prefix}index.html#spacio-dual">{nav['services']}</a>
         <a href="{prefix}nosotros.html">{nav['practitioners']}</a>
         <a href="{prefix}contacto.html">{nav['resources']}</a>
         <a href="{prefix}book.html">{nav['book']}</a>
@@ -435,7 +416,7 @@ def build_home(lang="en"):
   <section class="section-white intro-section">
     <div class="intro-bg" aria-hidden="true"></div>
     <div class="container intro-block">
-      <h2 class="script-heading">El alquimista interior que abre puerta hacia el infinito</h2>
+      <h2 class="script-heading">&ldquo;No os conforméis a este siglo, sino transformaos por medio de la renovación de vuestras mentes&rdquo;</h2>
       <p class="intro-caption">Comienza tu viaje trascendental hacia una nueva conciencia de ser, estar y sentir. Dentro de un espacio seguro, íntegro y auténtico con diversas modalidades holísticas y energéticas que te ayudarán a restaurar el balance natural de tu esencia y presencia divina.</p>
       <a href="book.html" class="btn">Comienza tu Viaje</a>
     </div>
