@@ -21,11 +21,6 @@ NAV_LABELS = {
                back="← Volver a Servicios"),
 }
 
-FOOTER_FINE = {
-    "en": f"St. Thomas, US Virgin Islands &middot; &copy; {BRAND_NAME}. Fan-made clone for educational/demo purposes — not the official site.",
-    "es": f"St. Thomas, Islas Vírgenes de EE. UU. &middot; &copy; {BRAND_NAME}. Clon no oficial creado con fines educativos/demostrativos — no es el sitio oficial.",
-}
-
 # ---------------------------------------------------------------------------
 # Shared nav data
 # ---------------------------------------------------------------------------
@@ -291,6 +286,9 @@ HOME_DISCOVER_ES = [
     dict(eyebrow="Descubre", title="Meditación", photo="beach-meditation.png", icon="15.png",
          text="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor. Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención. Así dejaremos de buscar respuestas en el exterior pues comprendemos que todo está dentro de nosotros mismos.",
          link="book.html", link_text="Más Sobre Meditación"),
+    dict(eyebrow="Descubre", title="Hábitos", photo="food-bowl.png", icon="4.png",
+         text="Se dice que somos seres de hábitos, sin embargo, nunca nos detenemos a observar que hay detrás de esa rutina, de ese consumo desmedido, de esa conformidad y ese cansancio. Cuando sabes el por qué, cuando puedes identificar a qué respondes, comienzas a transformarte con un enfoque de amor propio y disciplina.",
+         link="book.html", link_text="Más Sobre Hábitos"),
 ]
 
 SECTION_DIVIDER = (
@@ -368,7 +366,6 @@ def render_footer(depth=0, lang="en"):
         <a href="#" aria-label="Facebook" target="_blank" rel="noopener">{SVG_ICONS['facebook']}</a>
         <a href="#" aria-label="Instagram" target="_blank" rel="noopener">{SVG_ICONS['instagram']}</a>
       </div>
-      <p class="footer-fine">{FOOTER_FINE[lang]}</p>
     </div>
   </footer>"""
 
@@ -449,14 +446,13 @@ def build_home(lang="en"):
   </section>
   {SECTION_DIVIDER}
 
-  <section class="section-dark text-center">
+  <section class="section-dark text-center footer-lead">
     <div class="container">
       <h2>¿Todo listo para comenzar?</h2>
       <p>Reserva una sesión con nuestras practicantes y comienza el camino de regreso a ti mismo.</p>
       <a href="book.html" class="btn">Reservar una Sesión</a>
     </div>
-  </section>
-  {SECTION_DIVIDER}"""
+  </section>"""
         title = BRAND_NAME
         description = f"Clon visual no oficial de {BRAND_NAME} — un santuario metafísico y esotérico de sanación en St. Thomas, Islas Vírgenes de EE. UU."
     else:
@@ -484,14 +480,13 @@ def build_home(lang="en"):
   </section>
   {SECTION_DIVIDER}
 
-  <section class="section-dark text-center">
+  <section class="section-dark text-center footer-lead">
     <div class="container">
       <h2>Ready to Begin?</h2>
       <p>Book a session with one of our practitioners and start your journey home to yourself.</p>
       <a href="book.html" class="btn">Book a Session</a>
     </div>
-  </section>
-  {SECTION_DIVIDER}"""
+  </section>"""
         title = BRAND_NAME
         description = f"Unofficial visual clone of {BRAND_NAME} — a metaphysical and esoteric healing sanctuary in St. Thomas, USVI."
 
