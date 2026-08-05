@@ -281,13 +281,13 @@ HOME_DISCOVER_ES = [
          text="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
          link="book.html", link_text="Más Sobre Consejería"),
     dict(eyebrow="Descubre", title="Reiki y Energía", slug="reiki-energia", photo="reiki-energy-woman.png", icon="4.png",
-         text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — para eliminar bloqueos y fomentar una alineación poderosa. Trabaja en tus campos energéticos, reconoce tu capacidad sanadora e integra lo que la naturaleza te ofrece.",
+         text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — eliminando bloqueos y fomentando una alineación poderosa.",
          link="offerings/reiki-energy-healing.html", link_text="Más sobre el Reiki"),
     dict(eyebrow="Descubre", title="Meditación", slug="meditacion", photo="beach-meditation.png", icon="15.png",
-         text="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor. Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención. Así dejaremos de buscar respuestas en el exterior pues comprendemos que todo está dentro de nosotros mismos.",
+         text="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor. Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención. Dejamos de buscar respuestas en el exterior comprendiendo que todo está dentro de nosotros mismos.",
          link="book.html", link_text="Más Sobre Meditación"),
     dict(eyebrow="Descubre", title="Hábitos", slug="habitos", photo="food-bowl.png", icon="4.png",
-         text="Se dice que somos seres de hábitos, sin embargo, nunca nos detenemos a observar que hay detrás de esa rutina, de ese consumo desmedido, de esa conformidad y ese cansancio. Cuando sabes el por qué, cuando puedes identificar a qué respondes, comienzas a transformarte con un enfoque de amor propio y disciplina.",
+         text="Se dice que somos seres de hábitos, sin embargo, nunca nos detenemos a observar que hay detrás de esa rutina, de ese consumo desmedido, de esa conformidad y cansancio. Cuando sabes el por qué, cuando puedes identificar a qué respondes, comienzas a transformarte con un enfoque de amor propio y disciplina.",
          link="book.html", link_text="Más Sobre Hábitos"),
 ]
 
