@@ -276,18 +276,21 @@ HOME_DISCOVER_ES = [
              "Aquí no hay un camino prescrito. El proceso es orgánico, único para cada ser. Patria acompaña desde la escucha profunda y sin juicio, creando un espacio donde todo lo que eres tiene cabida: tus sombras, tus luces, tus contradicciones, tu grandeza.",
          ],
          link="book.html", link_text="Reserva tu Sesión"),
-    dict(eyebrow="Descubre", title="El Coaching de Vida", photo="buddha-monk.png", icon="5.png",
+    dict(eyebrow="Descubre", title="Coaching de Vida", photo="buddha-monk.png", icon="5.png",
          text=[
              "Una conversación transformadora que te ayuda a ver con claridad lo que antes estaba nublado. No se trata de dar respuestas — se trata de hacer las preguntas correctas para que tú mismo descubras las tuyas.",
              "Te acompañamos a identificar patrones de comportamiento, diseñar metas con intención y construir el puente entre quién eres hoy y quién deseas ser. Sin guiones. Sin fórmulas. Solo presencia.",
          ],
          link="book.html", link_text="Más Sobre Coaching"),
-    dict(eyebrow="Descubre", title="El Reiki y La Energía", photo="reiki-energy-woman.png", icon="4.png",
-         text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — para eliminar bloqueos y fomentar una alineación poderosa. Trabaja en tus campos energéticos, reconoce tu capacidad sanadora e integra lo que la naturaleza te ofrece.",
-         link="offerings/reiki-energy-healing.html", link_text="Más sobre el Reiki"),
     dict(eyebrow="Descubre", title="Consejería Espiritual", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
          text="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
          link="book.html", link_text="Más Sobre Consejería"),
+    dict(eyebrow="Descubre", title="El Reiki y La Energía", photo="reiki-energy-woman.png", icon="4.png",
+         text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — para eliminar bloqueos y fomentar una alineación poderosa. Trabaja en tus campos energéticos, reconoce tu capacidad sanadora e integra lo que la naturaleza te ofrece.",
+         link="offerings/reiki-energy-healing.html", link_text="Más sobre el Reiki"),
+    dict(eyebrow="Descubre", title="Meditación", photo="mary-jesus-procession.jpeg", icon="15.png",
+         text="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor. Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención. Así dejaremos de buscar respuestas en el exterior pues comprendemos que todo está dentro de nosotros mismos.",
+         link="book.html", link_text="Más Sobre Meditación"),
 ]
 
 SECTION_DIVIDER = (
