@@ -278,8 +278,8 @@ HOME_DISCOVER_ES = [
          link="book.html", link_text="Reserva tu Sesión"),
     dict(eyebrow="Descubre", title="El Coaching de Vida", photo="buddha-monk.png", icon="5.png",
          text=[
-             "El coaching de vida y negocios es una conversación transformadora que te ayuda a ver con claridad lo que antes estaba nublado. No se trata de dar respuestas — se trata de hacer las preguntas correctas para que tú mismo descubras las tuyas.",
-             "Desde la sociología y el coaching certificado, te acompañamos a identificar patrones de comportamiento, diseñar metas con intención y construir el puente entre quién eres hoy y quién deseas ser. Sin guiones. Sin fórmulas. Solo presencia.",
+             "Una conversación transformadora que te ayuda a ver con claridad lo que antes estaba nublado. No se trata de dar respuestas — se trata de hacer las preguntas correctas para que tú mismo descubras las tuyas.",
+             "Te acompañamos a identificar patrones de comportamiento, diseñar metas con intención y construir el puente entre quién eres hoy y quién deseas ser. Sin guiones. Sin fórmulas. Solo presencia.",
          ],
          link="book.html", link_text="Más Sobre Coaching"),
     dict(eyebrow="Descubre", title="La Consciencia Corporal", photo="mary-jesus-procession.jpeg", icon="15.png",
