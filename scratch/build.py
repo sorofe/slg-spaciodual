@@ -285,10 +285,10 @@ HOME_DISCOVER_ES = [
     dict(eyebrow="Descubre", title="Consejería Espiritual", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
          text="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
          link="book.html", link_text="Más Sobre Consejería"),
-    dict(eyebrow="Descubre", title="El Reiki y La Energía", photo="reiki-energy-woman.png", icon="4.png",
+    dict(eyebrow="Descubre", title="Reiki y Energía", photo="reiki-energy-woman.png", icon="4.png",
          text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — para eliminar bloqueos y fomentar una alineación poderosa. Trabaja en tus campos energéticos, reconoce tu capacidad sanadora e integra lo que la naturaleza te ofrece.",
          link="offerings/reiki-energy-healing.html", link_text="Más sobre el Reiki"),
-    dict(eyebrow="Descubre", title="Meditación", photo="mary-jesus-procession.jpeg", icon="15.png",
+    dict(eyebrow="Descubre", title="Meditación", photo="beach-meditation.png", icon="15.png",
          text="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor. Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención. Así dejaremos de buscar respuestas en el exterior pues comprendemos que todo está dentro de nosotros mismos.",
          link="book.html", link_text="Más Sobre Meditación"),
 ]
