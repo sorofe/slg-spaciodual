@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spaciodual.us</title>
-<meta name="description" content="Static demo booking page — no real scheduling.">
+<title>Reserva tu Sesión | Spaciodual.us</title>
+<meta name="description" content="Reserva tu sesión: pago y selección de fecha y hora.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header is-solid" data-always-solid="true">
     <div class="header-inner">
-      <a href="book.html" class="logo-text">Book a Session</a>
+      <a href="book.html" class="logo-text">Reservar una Sesión</a>
       <div class="header-icons">
         <a href="#" class="icon-link" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M13 22v-9h3l1-4h-4V6.5C13 5.4 13.6 5 14.7 5H17V1.2C16.6 1.1 15.3 1 13.9 1 11 1 9 2.8 9 6v3H6v4h3v9h4z"/></svg></a>
         <a href="#" class="icon-link" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.3" cy="6.7" r="1"/></svg></a>
@@ -21,26 +21,31 @@
 <main>
   <section class="hero page-hero" style="background-image:url('images/hero-sanctuary.jpg')">
     <div class="hero-content">
-      <h1>Book a Session</h1>
-      <p class="hero-sub" style="font-size:1.1rem">Please fill out the form below to request a session</p>
+      <h1>Reserva tu Sesión</h1>
+      <p class="hero-sub" style="font-size:1.1rem">Dos pasos: pago y luego selección de fecha y hora</p>
     </div>
   </section>
 
   <section class="section-white">
     <div class="container text-center">
-      <div class="notice-badge">This is a static demo booking form. No real scheduling or payment happens here — it does not submit anywhere.</div>
-      <form class="form-mock">
-        <div class="form-row">
-          <label for="name">Full Name</label>
-          <input id="name" type="text" placeholder="Jane Doe">
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="jane@example.com">
-        </div>
-        <div class="form-row">
-          <label for="offering">Session Type</label>
-          <select id="offering">
+      <div class="notice-badge">Esta es una demostración estática. No se procesa ningún pago ni se agenda ninguna sesión real todavía — el pago y el calendario se conectarán más adelante.</div>
+
+      <div class="checkout-steps" aria-hidden="true">
+        <div class="checkout-step-indicator is-active" data-step-indicator="1"><span>1</span>Pago</div>
+        <div class="checkout-step-line"></div>
+        <div class="checkout-step-indicator" data-step-indicator="2"><span>2</span>Fecha y Hora</div>
+      </div>
+
+      <form class="form-mock checkout-form">
+        <div class="checkout-panel is-active" data-step="1">
+          <div class="form-row">
+            <label for="offering">Tipo de Sesión</label>
+            <select id="offering">
+          <option>Coaching de Vida</option>
+          <option>Consejería Espiritual</option>
+          <option>Reiki y Energía</option>
+          <option>Meditación</option>
+          <option>Hábitos</option>
           <option>Akashic Record Readings</option>
           <option>Apothecary</option>
           <option>Astrology Readings</option>
@@ -54,17 +59,53 @@
           <option>Sound Alchemy</option>
           <option>Spirit Guide Conversations</option>
           <option>Tarot & Oracle Readings</option>
-          </select>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="name">Nombre en la Tarjeta</label>
+            <input id="name" type="text" placeholder="Tu nombre completo">
+          </div>
+          <div class="form-row">
+            <label for="email">Correo Electrónico</label>
+            <input id="email" type="email" placeholder="tucorreo@ejemplo.com">
+          </div>
+          <div class="form-row">
+            <label for="card">Número de Tarjeta</label>
+            <input id="card" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000">
+          </div>
+          <div class="form-row-split">
+            <div class="form-row">
+              <label for="expiry">Vencimiento</label>
+              <input id="expiry" type="text" placeholder="MM/AA">
+            </div>
+            <div class="form-row">
+              <label for="cvv">CVV</label>
+              <input id="cvv" type="text" inputmode="numeric" placeholder="123">
+            </div>
+          </div>
+          <button type="button" class="btn checkout-next">Continuar a Fecha y Hora</button>
         </div>
-        <div class="form-row">
-          <label for="date">Preferred Date</label>
-          <input id="date" type="date">
+
+        <div class="checkout-panel" data-step="2">
+          <div class="form-row">
+            <label for="date">Selecciona una Fecha</label>
+            <input id="date" type="date">
+          </div>
+          <div class="form-row">
+            <label>Selecciona una Hora</label>
+            <div class="time-slot-grid">
+          <button type="button" class="time-slot">9:00 AM</button>
+          <button type="button" class="time-slot">10:30 AM</button>
+          <button type="button" class="time-slot">12:00 PM</button>
+          <button type="button" class="time-slot">2:00 PM</button>
+          <button type="button" class="time-slot">3:30 PM</button>
+          <button type="button" class="time-slot">5:00 PM</button>
+            </div>
+          </div>
+          <button type="button" class="btn checkout-back btn-outline-dark">&larr; Volver a Pago</button>
+          <button type="submit" class="btn">Confirmar Reserva</button>
         </div>
-        <div class="form-row">
-          <label for="notes">Notes</label>
-          <textarea id="notes" placeholder="Tell us a little about what you're seeking..."></textarea>
-        </div>
-        <button type="submit" class="btn">Request Session</button>
+
         <p class="form-mock-note small-note" style="display:none; margin-top:16px;"></p>
       </form>
     </div>
@@ -74,11 +115,11 @@
     <div class="container">
       <a href="index.html" class="logo-text">Spaciodual.us</a>
       <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="index.html#spacio-dual">Services & Offerings</a>
-        <a href="nosotros.html">About</a>
-        <a href="contacto.html">Contact</a>
-        <a href="book.html">Book a Session</a>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#spacio-dual">Servicios y Ofrendas</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="book.html">Reservar una Sesión</a>
       </nav>
       <div class="footer-social">
         <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M13 22v-9h3l1-4h-4V6.5C13 5.4 13.6 5 14.7 5H17V1.2C16.6 1.1 15.3 1 13.9 1 11 1 9 2.8 9 6v3H6v4h3v9h4z"/></svg></a>

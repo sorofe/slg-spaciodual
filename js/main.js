@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
       var note = form.querySelector('.form-mock-note');
       if (note) {
-        note.textContent = 'This is a static demo form — no data is sent. In the real site this would submit your request.';
+        note.textContent = 'Este es un formulario de demostración estática — no se envía ningún dato. En el sitio real esto enviaría tu solicitud.';
         note.style.display = 'block';
       }
     });
@@ -31,6 +31,40 @@ document.addEventListener('DOMContentLoaded', function () {
       var original = btn.textContent;
       btn.textContent = 'Demo only';
       setTimeout(function () { btn.textContent = original; }, 1400);
+    });
+  });
+
+  // Two-step checkout: payment -> date/time (both static demo panels)
+  var checkoutForm = document.querySelector('.checkout-form');
+  if (checkoutForm) {
+    var panels = checkoutForm.querySelectorAll('.checkout-panel');
+    var indicators = document.querySelectorAll('.checkout-step-indicator');
+
+    function goToStep(step) {
+      panels.forEach(function (panel) {
+        panel.classList.toggle('is-active', panel.dataset.step === String(step));
+      });
+      indicators.forEach(function (ind) {
+        ind.classList.toggle('is-active', ind.dataset.stepIndicator === String(step));
+      });
+    }
+
+    var nextBtn = checkoutForm.querySelector('.checkout-next');
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () { goToStep(2); });
+    }
+    var backBtn = checkoutForm.querySelector('.checkout-back');
+    if (backBtn) {
+      backBtn.addEventListener('click', function () { goToStep(1); });
+    }
+  }
+
+  document.querySelectorAll('.time-slot').forEach(function (slot) {
+    slot.addEventListener('click', function () {
+      slot.parentElement.querySelectorAll('.time-slot').forEach(function (s) {
+        s.classList.remove('is-selected');
+      });
+      slot.classList.add('is-selected');
     });
   });
 });

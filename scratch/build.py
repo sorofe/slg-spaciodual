@@ -276,20 +276,93 @@ HOME_DISCOVER_ES = [
              "Una conversación transformadora que te ayuda a ver con claridad lo que antes estaba nublado. No se trata de dar respuestas — se trata de hacer las preguntas correctas para que tú mismo descubras las tuyas.",
              "Te acompañamos a identificar patrones de comportamiento, diseñar metas con intención y construir el puente entre quién eres hoy y quién deseas ser. Sin guiones. Sin fórmulas. Solo presencia.",
          ],
-         link="book.html", link_text="Más Sobre Coaching"),
+         link="secciones/coaching-de-vida.html", link_text="Más Sobre Coaching"),
     dict(eyebrow="Descubre", title="Consejería Espiritual", slug="consejeria-espiritual", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
          text="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
-         link="book.html", link_text="Más Sobre Consejería"),
+         link="secciones/consejeria-espiritual.html", link_text="Más Sobre Consejería"),
     dict(eyebrow="Descubre", title="Reiki y Energía", slug="reiki-energia", photo="reiki-energy-woman.png", icon="4.png",
          text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — eliminando bloqueos y fomentando una alineación poderosa.",
-         link="offerings/reiki-energy-healing.html", link_text="Más sobre el Reiki"),
+         link="secciones/reiki-energia.html", link_text="Más sobre el Reiki"),
     dict(eyebrow="Descubre", title="Meditación", slug="meditacion", photo="beach-meditation.png", icon="15.png",
          text="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor. Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención. Dejamos de buscar respuestas en el exterior comprendiendo que todo está dentro de nosotros mismos.",
-         link="book.html", link_text="Más Sobre Meditación"),
+         link="secciones/meditacion.html", link_text="Más Sobre Meditación"),
     dict(eyebrow="Descubre", title="Hábitos", slug="habitos", photo="food-bowl.png", icon="4.png",
          text="Se dice que somos seres de hábitos, sin embargo, nunca nos detenemos a observar que hay detrás de esa rutina, de ese consumo desmedido, de esa conformidad y cansancio. Cuando sabes el por qué, cuando puedes identificar a qué respondes, comienzas a transformarte con un enfoque de amor propio y disciplina.",
-         link="book.html", link_text="Más Sobre Hábitos"),
+         link="secciones/habitos.html", link_text="Más Sobre Hábitos"),
 ]
+
+SECTION_PAGES = {
+    "coaching-de-vida": dict(
+        title="Coaching de Vida", hero="buddha-monk.png",
+        tagline="Una conversación transformadora que te ayuda a ver con claridad lo que antes estaba nublado.",
+        body=[
+            "No se trata de dar respuestas — se trata de hacer las preguntas correctas para que tú mismo descubras las tuyas. Te acompañamos a identificar patrones de comportamiento, diseñar metas con intención y construir el puente entre quién eres hoy y quién deseas ser.",
+            "Sin guiones. Sin fórmulas. Solo presencia. Cada sesión parte de tu realidad concreta — tus relaciones, tu trabajo, tus decisiones pendientes — y te ofrece un espacio estructurado para pensar con claridad y actuar con intención.",
+        ],
+        benefits=[
+            "Mayor claridad sobre tus objetivos personales y profesionales.",
+            "Herramientas prácticas para sostener el cambio en el tiempo.",
+            "Un espacio de escucha sin juicio, a tu propio ritmo.",
+            "Metas diseñadas con intención, no por inercia.",
+        ],
+    ),
+    "consejeria-espiritual": dict(
+        title="Consejería Espiritual", hero="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg",
+        tagline="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor.",
+        body=[
+            "Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
+            "La consejería espiritual no busca imponer un camino ni una creencia — es un acompañamiento honesto que te ayuda a reconectar con tu propia brújula interior, especialmente en los momentos donde sientes que has perdido el rumbo.",
+        ],
+        benefits=[
+            "Un espacio confidencial y libre de juicio para explorar lo que sientes.",
+            "Herramientas para procesar la sombra sin evitarla.",
+            "Mayor conexión con tu propósito y tu voz interior.",
+            "Acompañamiento adaptado a tu proceso, no a un guion fijo.",
+        ],
+    ),
+    "reiki-energia": dict(
+        title="Reiki y Energía", hero="reiki-energy-woman.png",
+        tagline="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar.",
+        body=[
+            "Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — eliminando bloqueos y fomentando una alineación poderosa.",
+            "Cada sesión crea las condiciones necesarias para que tu propio cuerpo recuerde su capacidad innata de sanar: un espacio de quietud, contacto consciente e intención enfocada en restaurar el flujo natural de tu energía.",
+        ],
+        benefits=[
+            "Liberación de bloqueos energéticos acumulados.",
+            "Mayor sensación de calma y equilibrio interior.",
+            "Apoyo complementario a otros procesos de sanación.",
+            "Reconexión con la capacidad natural del cuerpo de sanarse.",
+        ],
+    ),
+    "meditacion": dict(
+        title="Meditación", hero="beach-meditation.png",
+        tagline="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor.",
+        body=[
+            "Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención.",
+            "Dejamos de buscar respuestas en el exterior comprendiendo que todo está dentro de nosotros mismos. Practicar de forma guiada te ofrece un punto de apoyo real para sostener la práctica más allá de la sesión.",
+        ],
+        benefits=[
+            "Reducción del estrés y la ansiedad en el día a día.",
+            "Mayor claridad mental y capacidad de atención.",
+            "Herramientas para regresar a la calma en cualquier momento.",
+            "Una práctica sostenible que puedes llevar a tu vida diaria.",
+        ],
+    ),
+    "habitos": dict(
+        title="Hábitos", hero="food-bowl.png",
+        tagline="Se dice que somos seres de hábitos, sin embargo, nunca nos detenemos a observar qué hay detrás de esa rutina.",
+        body=[
+            "De ese consumo desmedido, de esa conformidad y cansancio. Cuando sabes el por qué, cuando puedes identificar a qué respondes, comienzas a transformarte con un enfoque de amor propio y disciplina.",
+            "Trabajamos juntos para identificar los hábitos que ya no te sirven y diseñar, paso a paso, nuevas rutinas alineadas con quién quieres ser — sin exigencia ni perfeccionismo, con constancia y compasión.",
+        ],
+        benefits=[
+            "Mayor conciencia sobre los patrones que te limitan.",
+            "Estrategias prácticas para construir hábitos sostenibles.",
+            "Un enfoque de disciplina desde el amor propio, no la exigencia.",
+            "Acompañamiento personalizado a tu ritmo de cambio.",
+        ],
+    ),
+}
 
 SECTION_DIVIDER = (
     '<div class="section-divider" aria-hidden="true">'
@@ -601,6 +674,45 @@ def build_offering(slug, data):
 
 
 # ---------------------------------------------------------------------------
+# HOME PAGE SECTION DETAIL PAGES (Coaching, Consejería, Reiki, Meditación, Hábitos)
+# ---------------------------------------------------------------------------
+def build_section_page(slug, data):
+    depth = 1
+    body_paras = "\n".join(f"      <p>{p}</p>" for p in data["body"])
+    benefits_items = "\n".join(f"        <li>{b}</li>" for b in data["benefits"])
+
+    body = f"""  <section class="hero page-hero" style="background-image:url('{rel(depth,'')}images/{data['hero']}')">
+    <div class="hero-content">
+      <a href="{rel(depth,'')}index.html#{slug}" class="back-link">&larr; Volver a Spaciodual.us</a>
+      <h1>{data['title']}</h1>
+      <p class="hero-sub" style="font-size:1.1rem">{data['tagline']}</p>
+    </div>
+  </section>
+
+  <section class="section-white">
+    <div class="container" style="max-width:760px">
+{body_paras}
+      <h3 style="margin-top:40px">Beneficios</h3>
+      <ul class="benefits-list">
+{benefits_items}
+      </ul>
+      <div class="text-center mt-40">
+        <a href="{rel(depth,'')}book.html" class="btn">Reserva tu Sesión</a>
+      </div>
+    </div>
+  </section>"""
+
+    html = page_shell(
+        f"{data['title']} | {BRAND_NAME}",
+        data["tagline"],
+        depth, body, solid_header=True, lang="es",
+    )
+    out_dir = ROOT / "secciones"
+    out_dir.mkdir(exist_ok=True)
+    (out_dir / f"{slug}.html").write_text(html, encoding="utf-8")
+
+
+# ---------------------------------------------------------------------------
 # PRACTITIONERS PAGE
 # ---------------------------------------------------------------------------
 def build_about():
@@ -684,51 +796,87 @@ def build_contact():
 # ---------------------------------------------------------------------------
 def build_book():
     depth = 0
-    offering_options = "\n".join(f'          <option>{title}</option>' for title, _ in OFFERING_LINKS)
+    all_sections = list(SECTION_PAGES.values()) + [dict(title=t) for t, _ in OFFERING_LINKS]
+    offering_options = "\n".join(f'          <option>{d["title"]}</option>' for d in all_sections)
+    time_slots = ["9:00 AM", "10:30 AM", "12:00 PM", "2:00 PM", "3:30 PM", "5:00 PM"]
+    time_slot_buttons = "\n".join(
+        f'          <button type="button" class="time-slot">{t}</button>' for t in time_slots
+    )
 
     body = f"""  <section class="hero page-hero" style="background-image:url('images/hero-sanctuary.jpg')">
     <div class="hero-content">
-      <h1>Book a Session</h1>
-      <p class="hero-sub" style="font-size:1.1rem">Please fill out the form below to request a session</p>
+      <h1>Reserva tu Sesión</h1>
+      <p class="hero-sub" style="font-size:1.1rem">Dos pasos: pago y luego selección de fecha y hora</p>
     </div>
   </section>
 
   <section class="section-white">
     <div class="container text-center">
-      <div class="notice-badge">This is a static demo booking form. No real scheduling or payment happens here — it does not submit anywhere.</div>
-      <form class="form-mock">
-        <div class="form-row">
-          <label for="name">Full Name</label>
-          <input id="name" type="text" placeholder="Jane Doe">
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="jane@example.com">
-        </div>
-        <div class="form-row">
-          <label for="offering">Session Type</label>
-          <select id="offering">
+      <div class="notice-badge">Esta es una demostración estática. No se procesa ningún pago ni se agenda ninguna sesión real todavía — el pago y el calendario se conectarán más adelante.</div>
+
+      <div class="checkout-steps" aria-hidden="true">
+        <div class="checkout-step-indicator is-active" data-step-indicator="1"><span>1</span>Pago</div>
+        <div class="checkout-step-line"></div>
+        <div class="checkout-step-indicator" data-step-indicator="2"><span>2</span>Fecha y Hora</div>
+      </div>
+
+      <form class="form-mock checkout-form">
+        <div class="checkout-panel is-active" data-step="1">
+          <div class="form-row">
+            <label for="offering">Tipo de Sesión</label>
+            <select id="offering">
 {offering_options}
-          </select>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="name">Nombre en la Tarjeta</label>
+            <input id="name" type="text" placeholder="Tu nombre completo">
+          </div>
+          <div class="form-row">
+            <label for="email">Correo Electrónico</label>
+            <input id="email" type="email" placeholder="tucorreo@ejemplo.com">
+          </div>
+          <div class="form-row">
+            <label for="card">Número de Tarjeta</label>
+            <input id="card" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000">
+          </div>
+          <div class="form-row-split">
+            <div class="form-row">
+              <label for="expiry">Vencimiento</label>
+              <input id="expiry" type="text" placeholder="MM/AA">
+            </div>
+            <div class="form-row">
+              <label for="cvv">CVV</label>
+              <input id="cvv" type="text" inputmode="numeric" placeholder="123">
+            </div>
+          </div>
+          <button type="button" class="btn checkout-next">Continuar a Fecha y Hora</button>
         </div>
-        <div class="form-row">
-          <label for="date">Preferred Date</label>
-          <input id="date" type="date">
+
+        <div class="checkout-panel" data-step="2">
+          <div class="form-row">
+            <label for="date">Selecciona una Fecha</label>
+            <input id="date" type="date">
+          </div>
+          <div class="form-row">
+            <label>Selecciona una Hora</label>
+            <div class="time-slot-grid">
+{time_slot_buttons}
+            </div>
+          </div>
+          <button type="button" class="btn checkout-back btn-outline-dark">&larr; Volver a Pago</button>
+          <button type="submit" class="btn">Confirmar Reserva</button>
         </div>
-        <div class="form-row">
-          <label for="notes">Notes</label>
-          <textarea id="notes" placeholder="Tell us a little about what you're seeking..."></textarea>
-        </div>
-        <button type="submit" class="btn">Request Session</button>
+
         <p class="form-mock-note small-note" style="display:none; margin-top:16px;"></p>
       </form>
     </div>
   </section>"""
 
     html = page_shell(
-        BRAND_NAME,
-        "Static demo booking page — no real scheduling.",
-        depth, body, solid_header=True,
+        f"Reserva tu Sesión | {BRAND_NAME}",
+        "Reserva tu sesión: pago y selección de fecha y hora.",
+        depth, body, solid_header=True, lang="es",
     )
     (ROOT / "book.html").write_text(html, encoding="utf-8")
 
@@ -738,6 +886,8 @@ def main():
     for slug, data in OFFERINGS.items():
         data["title"] = data.get("title", slug)
         build_offering(slug, data)
+    for slug, data in SECTION_PAGES.items():
+        build_section_page(slug, data)
     build_about()
     build_contact()
     build_book()
