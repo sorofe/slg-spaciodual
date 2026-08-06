@@ -287,6 +287,7 @@ HOME_DISCOVER_ES = [
          text="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor. Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención. Dejamos de buscar respuestas en el exterior comprendiendo que todo está dentro de nosotros mismos.",
          link="secciones/meditacion.html", link_text="Más Sobre Meditación"),
     dict(eyebrow="Descubre", title="Hábitos", slug="habitos", photo="food-bowl.png", icon="4.png",
+         img_style="object-position: left center;",
          text="Se dice que somos seres de hábitos, sin embargo, nunca nos detenemos a observar que hay detrás de esa rutina, de ese consumo desmedido, de esa conformidad y cansancio. Cuando sabes el por qué, cuando puedes identificar a qué respondes, comienzas a transformarte con un enfoque de amor propio y disciplina.",
          link="secciones/habitos.html", link_text="Más Sobre Hábitos"),
 ]
@@ -349,7 +350,7 @@ SECTION_PAGES = {
         ],
     ),
     "habitos": dict(
-        title="Hábitos", hero="food-bowl.png",
+        title="Hábitos", hero="food-bowl.png", hero_align="right",
         tagline="Se dice que somos seres de hábitos, sin embargo, nunca nos detenemos a observar qué hay detrás de esa rutina.",
         body=[
             "De ese consumo desmedido, de esa conformidad y cansancio. Cuando sabes el por qué, cuando puedes identificar a qué respondes, comienzas a transformarte con un enfoque de amor propio y disciplina.",
@@ -449,10 +450,11 @@ def page_shell(title, description, depth, body_html, extra_head="", solid_header
 """
 
 
-def img(depth, name, alt="", cls=""):
+def img(depth, name, alt="", cls="", style=""):
     prefix = rel(depth, "")
     cls_attr = f' class="{cls}"' if cls else ""
-    return f'<img src="{prefix}images/{name}" alt="{alt}"{cls_attr} loading="lazy">'
+    style_attr = f' style="{style}"' if style else ""
+    return f'<img src="{prefix}images/{name}" alt="{alt}"{cls_attr}{style_attr} loading="lazy">'
 
 
 # ---------------------------------------------------------------------------
@@ -468,7 +470,7 @@ def build_home(lang="en"):
         text_html = "\n          ".join(f"<p>{p}</p>" for p in paragraphs)
         id_attr = f' id="{d["slug"]}"' if d.get("slug") else ""
         discover_rows.append(f"""      <div class="discover-row{reverse}"{id_attr}>
-        <div class="discover-media">{img(depth, d['photo'], d['title'])}</div>
+        <div class="discover-media">{img(depth, d['photo'], d['title'], style=d.get('img_style', ''))}</div>
         <div class="discover-text">
           <span class="eyebrow">{d['eyebrow']}</span>
           <h2>{d['title']}</h2>
@@ -680,8 +682,9 @@ def build_section_page(slug, data):
     depth = 1
     body_paras = "\n".join(f"      <p>{p}</p>" for p in data["body"])
     benefits_items = "\n".join(f"        <li>{b}</li>" for b in data["benefits"])
+    hero_align_class = " hero-align-right" if data.get("hero_align") == "right" else ""
 
-    body = f"""  <section class="hero page-hero" style="background-image:url('{rel(depth,'')}images/{data['hero']}')">
+    body = f"""  <section class="hero page-hero{hero_align_class}" style="background-image:url('{rel(depth,'')}images/{data['hero']}')">
     <div class="hero-content">
       <a href="{rel(depth,'')}index.html#{slug}" class="back-link">&larr; Volver a Spaciodual.us</a>
       <h1>{data['title']}</h1>
