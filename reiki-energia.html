@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reiki y Energía | Spaciodual.us</title>
+  <meta name="description" content="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --dark:#080808; --dark2:#0f0f0f; --dark3:#141414;
+      --cream:#f0ebe0; --cream2:#ddd8cc; --muted:#9a9080;
+      --gold:#c9a96e; --gold2:#e0c28a;
+      --border:rgba(201,169,110,0.18);
+      --cinzel:'Cinzel','Times New Roman',serif;
+      --garamond:'Cardo','EB Garamond',Georgia,serif;
+      --raleway:'Raleway',system-ui,sans-serif;
+    }
+    html { scroll-behavior:smooth; }
+    body { background:var(--dark); color:var(--cream); font-family:var(--garamond); font-size:18px; overflow-x:hidden; line-height:1.8; }
+
+    /* ── NAV ── */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:900;
+      background:rgba(8,8,8,.96); border-bottom:1px solid var(--border);
+      padding:0 2rem; height:64px;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .nav-logo {
+      font-family:var(--cinzel); font-size:1.05rem; letter-spacing:.12em;
+      color:var(--cream); text-decoration:none;
+    }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { font-family:var(--raleway); font-size:.85rem; letter-spacing:.08em; text-transform:uppercase; color:var(--cream2); text-decoration:none; transition:color .2s; }
+    .nav-links a:hover { color:var(--gold); }
+    .nav-cta {
+      font-family:var(--raleway); font-size:.8rem; letter-spacing:.1em; text-transform:uppercase;
+      color:var(--gold); border:1px solid var(--gold); padding:.45rem 1.2rem;
+      text-decoration:none; transition:background .2s, color .2s;
+    }
+    .nav-cta:hover { background:var(--gold); color:#080808; }
+    @media(max-width:700px) { .nav-links { display:none; } }
+
+    /* ── HERO ── */
+    .page-hero {
+      position:relative; height:70vh; min-height:420px;
+      background-size:cover; background-position:center; background-attachment:fixed;
+      display:flex; align-items:flex-end; padding-bottom:5rem;
+    }
+    .page-hero::before {
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(to bottom, rgba(8,8,8,.35) 0%, rgba(8,8,8,.7) 100%);
+    }
+    .hero-content {
+      position:relative; z-index:2; padding:0 6vw; max-width:860px;
+    }
+    .back-link {
+      display:inline-block; font-family:var(--raleway); font-size:.78rem;
+      letter-spacing:.12em; text-transform:uppercase; color:var(--gold);
+      text-decoration:none; margin-bottom:1.5rem; opacity:.85;
+      transition:opacity .2s;
+    }
+    .back-link:hover { opacity:1; }
+    .hero-content h1 {
+      font-family:var(--cinzel); font-size:clamp(2rem,5vw,3.4rem);
+      font-weight:400; letter-spacing:.1em; color:var(--cream);
+      line-height:1.2; margin-bottom:1rem;
+    }
+    .hero-sub { font-family:var(--garamond); font-size:1.15rem; color:var(--cream2); max-width:560px; }
+
+    /* ── CONTENT ── */
+    .content-section { padding:5rem 6vw; background:var(--dark2); }
+    .container { max-width:760px; margin:0 auto; }
+    .container p { margin-bottom:1.5rem; color:var(--cream2); line-height:1.95; }
+    .container h3 {
+      font-family:var(--cinzel); font-size:1.1rem; letter-spacing:.08em;
+      color:var(--gold); margin-bottom:1.5rem; font-weight:400;
+    }
+    .benefits-list { list-style:none; margin-bottom:2rem; }
+    .benefits-list li {
+      padding:.75rem 0 .75rem 1.75rem; position:relative;
+      color:var(--cream2); border-bottom:1px solid rgba(201,169,110,.1);
+      line-height:1.6;
+    }
+    .benefits-list li::before {
+      content:'◇'; position:absolute; left:0; color:var(--gold); font-size:.75rem; top:.85rem;
+    }
+    .text-center { text-align:center; }
+    .mt-40 { margin-top:2.5rem; }
+    .cta-text { color:var(--cream); font-weight:600; margin-bottom:2rem; }
+
+    .btn {
+      display:inline-block; font-family:var(--raleway); font-size:.8rem;
+      letter-spacing:.14em; text-transform:uppercase;
+      color:var(--gold); border:1px solid var(--gold);
+      padding:.8rem 2.5rem; text-decoration:none;
+      transition:background .25s, color .25s;
+    }
+    .btn:hover { background:var(--gold); color:#080808; }
+
+    /* ── FOOTER ── */
+    footer {
+      background:var(--dark); border-top:1px solid var(--border);
+      padding:3rem 6vw; text-align:center;
+    }
+    .footer-logo {
+      font-family:var(--cinzel); font-size:1.1rem; letter-spacing:.14em;
+      color:var(--cream); text-decoration:none; display:block; margin-bottom:1.5rem;
+    }
+    .footer-nav { display:flex; flex-wrap:wrap; gap:1rem 2rem; justify-content:center; margin-bottom:2rem; }
+    .footer-nav a { font-family:var(--raleway); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); text-decoration:none; transition:color .2s; }
+    .footer-nav a:hover { color:var(--gold); }
+    .footer-social { display:flex; gap:1.2rem; justify-content:center; }
+    .footer-social a { color:var(--muted); transition:color .2s; }
+    .footer-social a:hover { color:var(--gold); }
+    .footer-social svg { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.5; }
+    .footer-copy { font-family:var(--raleway); font-size:.75rem; color:var(--muted); margin-top:1.5rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html">Spacio Dual</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#spacio-dual">Servicios</a></li>
+      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="index.html#reserva">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="index.html#reserva">Reservar</a>
+  </nav>
+
+  <main>
+    <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80')">
+      <div class="hero-content">
+        <a href="index.html" class="back-link">&#8592; Volver a Spaciodual.us</a>
+        <h1>Reiki y Energía</h1>
+        <p class="hero-sub">Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <p>Reiki es una palabra japonesa que significa "energía vital universal". Es una energía semejante a las ondas de radio, y puede ser aplicada de forma local o a distancia.</p>
+        <p>Esta modalidad de terapia energética es segura y eficaz. Nos permite equilibrar los siete chakras o centros sutiles de energía, localizados entre la base de la columna y la parte superior de la cabeza.</p>
+        <p>Nuestra práctica tiene como objetivo aportar energía pura a tus cuerpos físico, mental, emocional y espiritual, aumentando la energía vital del amor y favoreciendo la sanación y la expansión de conciencia.</p>
+        <h3>Beneficios</h3>
+        <ul class="benefits-list">
+          <li>Liberación de bloqueos energéticos acumulados.</li>
+          <li>Mayor sensación de calma y equilibrio interior.</li>
+          <li>Apoyo complementario a otros procesos de sanación.</li>
+          <li>Reconexión con la capacidad natural del cuerpo de sanarse.</li>
+        </ul>
+        <p class="text-center mt-40 cta-text">Reserva tu sesión de Reiki, presencial o a distancia, y permite que tu energía vuelva a fluir.</p>
+        <div class="text-center">
+          <a href="index.html#reserva" class="btn">Reservar sesi&#243;n</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-logo" href="index.html">Spacio Dual</a>
+    <nav class="footer-nav">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#spacio-dual">Servicios y Ofrendas</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a href="index.html#reserva">Contacto</a>
+      <a href="index.html#reserva">Reservar una Sesi&#243;n</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M13 22v-9h3l1-4h-4V6.5C13 5.4 13.6 5 14.7 5H17V1.2C16.6 1.1 15.3 1 13.9 1 11 1 9 2.8 9 6v3H6v4h3v9h4z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Spacio Dual &mdash; Patria Roche</p>
+  </footer>
+</body>
+</html>
