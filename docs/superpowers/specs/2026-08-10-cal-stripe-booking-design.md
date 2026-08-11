@@ -3,13 +3,17 @@
 ## Context
 
 Spaciodual.us is a static site hosted on GitHub Pages (no server-side code —
-`serve.py` is a local dev file server only). The 17 service pages (5 under
-`secciones/`, 12 under `offerings/`, excluding `apothecary.html` which is a
-product shop, not a bookable session) each end with a "Reserva tu Sesión"
-button. Today that button links to `book.html`, a fully static mock: a
-2-step form that collects fake payment details (name, card number, expiry,
-CVV) and then a fake date/time picker. Nothing is actually processed or
-booked.
+`serve.py` is a local dev file server only). The 5 service pages (all under
+`secciones/`: Coaching de Vida, Consejería Espiritual, Reiki y Energía,
+Meditación, Hábitos) each end with a "Reserva tu Sesión" button. Today that
+button links to `book.html`, a fully static mock: a 2-step form that
+collects fake payment details (name, card number, expiry, CVV) and then a
+fake date/time picker. Nothing is actually processed or booked.
+
+(The `offerings/` directory and its 12 pages, plus the `apothecary.html`
+product-shop page mentioned below, were removed in a later cleanup pass —
+the "excluded from scope" note about it is kept for historical context in
+case product checkout is reintroduced later.)
 
 The goal is to replace this mock with a real, working booking + payment
 flow, without adding any custom backend, since the site stays on GitHub
@@ -26,19 +30,20 @@ Pages.
   slot in Cal.com (via its Stripe app), not as a separate step. This
   replaces both the fake card form and the fake date/time picker in one
   motion.
-- **Scope: sessions only.** `offerings/apothecary.html` (physical products,
-  $18–$28 items) is explicitly out of scope. It needs a different flow
-  (product checkout, not calendar booking) and is left untouched.
-- **One shared Cal.com Event Type** for all 17 services: 60 minutes, $90.
+- **Scope: sessions only.** There is no product-shop page currently on the
+  site (the earlier `offerings/apothecary.html` was removed in cleanup).
+  If a product shop is reintroduced later, it should get its own checkout
+  flow, not the calendar-booking flow described here.
+- **One shared Cal.com Event Type** for all 5 services: 60 minutes, $90.
   Services don't have individually different pricing/duration at this
   time.
 - **Which service was requested is captured via a required custom
   question** on the Cal.com event type ("Servicio solicitado"), since all
-  17 services share one event type. Service-specific entry points
+  5 services share one event type. Service-specific entry points
   pre-fill this field; the generic entry point (`book.html`) leaves it for
   the customer to choose from a dropdown inside Cal.com's own form.
 - **Widget presentation:**
-  - The 17 service pages: clicking "Reserva tu Sesión" opens Cal.com's
+  - The 5 service pages: clicking "Reserva tu Sesión" opens Cal.com's
     scheduler as a **popup modal** (via Cal.com's official embed script),
     staying on the page, with "Servicio solicitado" pre-filled to that
     page's service name.
@@ -59,7 +64,7 @@ Before any of this can go live, the user will, outside of this codebase:
 3. Create one Event Type (e.g. "Sesión de 60 min", 60 min, $90, payment
    required via the Stripe app).
 4. Add a required custom booking question "Servicio solicitado" (dropdown
-   or short text) listing the 17 service names.
+   or short text) listing the 5 service names.
 5. Provide the Cal.com username and event type slug (e.g.
    `spaciodual/sesion-60-min`) for the config values below.
 
@@ -81,10 +86,10 @@ Add logic to:
   entry point shows a "coming soon" message using the site's existing
   `notice-badge` styling instead of attempting to load a broken embed.
 
-**17 service pages** (`secciones/*.html`, `offerings/*.html` excluding
-`apothecary.html`) — the `Reserva tu Sesión` button's `href="../book.html"`
-is replaced with a popup trigger (button + data attributes consumed by the
-`main.js` logic above), carrying that page's service name.
+**5 service pages** (`secciones/*.html`) — the `Reserva tu Sesión` button's
+`href="../book.html"` is replaced with a popup trigger (button + data
+attributes consumed by the `main.js` logic above), carrying that page's
+service name.
 
 **`book.html`** — the mock 2-step form (`.checkout-form`, both
 `.checkout-panel` steps, the card-detail fields) is removed and replaced
@@ -92,13 +97,13 @@ with a container for the inline Cal.com embed. The existing
 `notice-badge` "static demo" copy is replaced with the "coming soon"
 placeholder copy (pre-configuration) or removed once real values are set.
 
-**Unaffected:** header/cart icon links (still point to `book.html`),
-`apothecary.html`, all other pages' content.
+**Unaffected:** header/cart icon links (still point to `book.html`), all
+other pages' content.
 
 ## Rollout & testing
 
 1. Implement with config values `null`; verify locally (`serve.py`) that
-   all 17 service pages and `book.html` show the placeholder state
+   all 5 service pages and `book.html` show the placeholder state
    cleanly — no broken embeds, no dead ends.
 2. User completes the manual Cal.com/Stripe setup and provides the
    username + event slug.
@@ -115,5 +120,5 @@ placeholder copy (pre-configuration) or removed once real values are set.
 ## Out of scope
 
 - Apothecary / product checkout.
-- Per-service pricing or duration (all 17 share one event type for now).
+- Per-service pricing or duration (all 5 share one event type for now).
 - Any custom backend, serverless functions, or webhook handling.
