@@ -191,7 +191,7 @@ section { padding: 100px 0; }
 .section-white { background: var(--color-white); }
 
 .intro-block {
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto;
   text-align: center;
 }
@@ -220,6 +220,15 @@ section { padding: 100px 0; }
   line-height: 1.25;
   color: var(--color-ink);
   letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.scripture-ref {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: var(--color-accent-dark);
   margin-bottom: 34px;
 }
 
