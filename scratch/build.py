@@ -37,7 +37,7 @@ HOME_DISCOVER_ES = [
     dict(eyebrow="Descubre", title="Consejería Espiritual", slug="consejeria-espiritual", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
          text="Conocerte, perdonarte y amarte, es identificarte con el todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
          link="secciones/consejeria-espiritual.html", link_text="Más Sobre Consejería"),
-    dict(eyebrow="Descubre", title="Reiki y Energía", slug="reiki-energia", photo="reiki-energy-woman.png", icon="4.png",
+    dict(eyebrow="Descubre", title="Reiki", slug="reiki-energia", photo="reiki-energy-woman.png", icon="4.png",
          text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — eliminando bloqueos y fomentando una alineación poderosa.",
          link="secciones/reiki-energia.html", link_text="Más sobre el Reiki"),
     dict(eyebrow="Descubre", title="Meditación", slug="meditacion", photo="beach-meditation.png", icon="15.png",
@@ -81,7 +81,7 @@ SECTION_PAGES = {
         cta_intro="Reserva tu sesión de Consejería Espiritual y da el primer paso hacia el reencuentro con tu ser.",
     ),
     "reiki-energia": dict(
-        title="Reiki y Energía", hero="reiki-energy-woman.png",
+        title="Reiki", hero="reiki-energy-woman.png",
         tagline="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar.",
         body=[
             "Cada sesión de esta práctica crea las condiciones necesarias para que tu propio cuerpo recuerde su capacidad innata de sanar: un espacio de quietud, contacto consciente e intención enfocada en restaurar el flujo natural de tu energía.",
