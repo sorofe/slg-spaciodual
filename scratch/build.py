@@ -54,7 +54,7 @@ SECTION_PAGES = {
         title="Coaching de Vida", hero="buddha-monk.png",
         tagline="Una conversación transformadora que te ayuda a ver con claridad lo que antes estaba nublado.",
         body=[
-            "No se trata de dar respuestas — se trata de hacer las preguntas correctas para que tú mismo descubras las tuyas. Te acompañamos a identificar patrones de comportamiento, diseñar metas con intención y construir el puente entre quién eres hoy y quién deseas ser.",
+            "No se trata de dar respuestas, se trata de hacer las preguntas correctas para que tú mismo descubras las tuyas. Te acompañamos a identificar patrones de comportamientos, diseñar metas con intención y construir el puente entre quien eres hoy y quien deseas ser.",
             "Sin guiones. Sin fórmulas. Solo presencia. Cada sesión parte de tu realidad concreta — tus relaciones, tu trabajo, tus decisiones pendientes — y te ofrece un espacio estructurado para pensar con claridad y actuar con intención.",
         ],
         benefits=[
@@ -63,6 +63,7 @@ SECTION_PAGES = {
             "Un espacio de escucha sin juicio, a tu propio ritmo.",
             "Metas diseñadas con intención, no por inercia.",
         ],
+        cta_intro="Agenda tu sesión uno a uno y comienza hoy tu camino hacia una vida con propósito.",
     ),
     "consejeria-espiritual": dict(
         title="Consejería Espiritual", hero="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg",
@@ -302,6 +303,7 @@ def build_section_page(slug, data):
 {benefits_items}
       </ul>
       <div class="text-center mt-40">
+{f'<p class="cta-intro">{data["cta_intro"]}</p>' if data.get("cta_intro") else ""}
         <a href="{rel(depth,'')}book.html" class="btn">Reserva tu Sesión</a>
       </div>
     </div>
