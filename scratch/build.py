@@ -112,10 +112,10 @@ SECTION_PAGES = {
     ),
     "habitos": dict(
         title="Hábitos", hero="food-bowl.png", hero_align="right",
-        tagline="Se dice que somos seres de hábitos, sin embargo, nunca nos detenemos a observar qué hay detrás de esa rutina.",
+        tagline="Disciplina desde el amor propio, no desde la exigencia",
         body=[
-            "De ese consumo desmedido, de esa conformidad y cansancio. Cuando sabes el por qué, cuando puedes identificar a qué respondes, comienzas a transformarte con un enfoque de amor propio y disciplina.",
-            "Trabajamos juntos para identificar los hábitos que ya no te sirven y diseñar, paso a paso, nuevas rutinas alineadas con quién quieres ser — sin exigencia ni perfeccionismo, con constancia y compasión.",
+            "La observación se convierte en el ejercicio de identificar aquellas conductas o rutinas que necesitamos transformar.",
+            "Trabajaremos juntos para identificar los hábitos que ya no funcionan para ti y diseñaremos, paso a paso, nuevas rutinas alineadas con quien quieres ser — sin exigencias, ni perfeccionismos, con constancia y compasión.",
         ],
         benefits=[
             "Mayor conciencia sobre los patrones que te limitan.",
@@ -123,6 +123,7 @@ SECTION_PAGES = {
             "Un enfoque de disciplina desde el amor propio, no la exigencia.",
             "Acompañamiento personalizado a tu ritmo de cambio.",
         ],
+        cta_intro="Agenda tu sesión y comienza a transformar tus hábitos desde el amor propio.",
     ),
 }
 
