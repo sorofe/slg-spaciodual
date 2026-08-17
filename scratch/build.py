@@ -98,8 +98,9 @@ SECTION_PAGES = {
         title="Meditación", hero="beach-meditation.png",
         tagline="La meditación es el silencio que te habita, que te conecta con tu esencia y te habla con amor.",
         body=[
-            "Es en esa quietud que logramos restaurar y transformar estructuras físicas de nuestro cerebro y activar mecanismos de sanación. En ese espacio aprendemos a ser selectivos con nuestra energía y atención.",
-            "Dejamos de buscar respuestas en el exterior comprendiendo que todo está dentro de nosotros mismos. Practicar de forma guiada te ofrece un punto de apoyo real para sostener la práctica más allá de la sesión.",
+            "Este espacio está diseñado para que aprendas a utilizar la meditación como una herramienta de reprogramación y sanación para tu cuerpo y alma.",
+            "Conectando de forma orgánica con tu cuerpo álmico, dejando a un lado el ego, centrándonos en nuestro interior para encontrar claridad y presencia en el momento, abriendo el espacio al perdón como vehículo de sanación.",
+            "Practicar de forma guiada te ofrece un punto de apoyo real para sostener la práctica más allá de la sesión.",
         ],
         benefits=[
             "Reducción del estrés y la ansiedad en el día a día.",
@@ -107,6 +108,7 @@ SECTION_PAGES = {
             "Herramientas para regresar a la calma en cualquier momento.",
             "Una práctica sostenible que puedes llevar a tu vida diaria.",
         ],
+        cta_intro="Reserva tu sesión y descubre la técnica de meditación hecha para ti.",
     ),
     "habitos": dict(
         title="Hábitos", hero="food-bowl.png", hero_align="right",
