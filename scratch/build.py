@@ -67,10 +67,10 @@ SECTION_PAGES = {
     ),
     "consejeria-espiritual": dict(
         title="Consejería Espiritual", hero="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg",
-        tagline="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor.",
+        tagline="Conocerte, perdonarte y amarte, es identificarte con él todo y asumir tu conciencia de amor.",
         body=[
-            "Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
             "La consejería espiritual no busca imponer un camino ni una creencia — es un acompañamiento honesto que te ayuda a reconectar con tu propia brújula interior, especialmente en los momentos donde sientes que has perdido el rumbo.",
+            "Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
         ],
         benefits=[
             "Un espacio confidencial y libre de juicio para explorar lo que sientes.",
@@ -78,6 +78,7 @@ SECTION_PAGES = {
             "Mayor conexión con tu propósito y tu voz interior.",
             "Acompañamiento adaptado a tu proceso, no a un guion fijo.",
         ],
+        cta_intro="Reserva tu sesión de Consejería Espiritual y da el primer paso hacia el reencuentro con tu ser.",
     ),
     "reiki-energia": dict(
         title="Reiki y Energía", hero="reiki-energy-woman.png",
