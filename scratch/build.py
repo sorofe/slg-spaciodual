@@ -70,7 +70,7 @@ SECTION_PAGES = {
         tagline="Conocerte, perdonarte y amarte, es identificarte con el todo y asumir tu conciencia de amor.",
         body=[
             "La consejería espiritual no busca imponer un camino ni una creencia — es un acompañamiento honesto que te ayuda a reconectar con tu propia brújula interior, especialmente en los momentos donde sientes que has perdido el rumbo.",
-            "Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
+            "Las secciones están dirigidas a conectar con tu yo superior, escuchar tu guía interior y expandir tu consciencia. Es el camino hacia el amor propio: un espacio donde reconoces quién eres, sin prejuicios, ni creencias limitantes, y observando la grandeza de tu ser.",
         ],
         benefits=[
             "Un espacio confidencial y libre de juicio para explorar lo que sientes.",
