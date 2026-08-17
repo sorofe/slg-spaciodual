@@ -84,8 +84,7 @@ SECTION_PAGES = {
         title="Reiki y Energía", hero="reiki-energy-woman.png",
         tagline="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar.",
         body=[
-            "Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — eliminando bloqueos y fomentando una alineación poderosa.",
-            "Cada sesión crea las condiciones necesarias para que tu propio cuerpo recuerde su capacidad innata de sanar: un espacio de quietud, contacto consciente e intención enfocada en restaurar el flujo natural de tu energía.",
+            "Cada sesión de esta práctica crea las condiciones necesarias para que tu propio cuerpo recuerde su capacidad innata de sanar: un espacio de quietud, contacto consciente e intención enfocada en restaurar el flujo natural de tu energía.",
         ],
         benefits=[
             "Liberación de bloqueos energéticos acumulados.",
@@ -93,6 +92,7 @@ SECTION_PAGES = {
             "Apoyo complementario a otros procesos de sanación.",
             "Reconexión con la capacidad natural del cuerpo de sanarse.",
         ],
+        cta_intro="Reserva tu sesión de Reiki, y permite que tu energía vuelva a fluir.",
     ),
     "meditacion": dict(
         title="Meditación", hero="beach-meditation.png",
