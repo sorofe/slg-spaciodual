@@ -92,7 +92,7 @@ SECTION_PAGES = {
             "Apoyo complementario a otros procesos de sanación.",
             "Reconexión con la capacidad natural del cuerpo de sanarse.",
         ],
-        cta_intro="Reserva tu sesión de Reiki, y permite que tu energía vuelva a fluir.",
+        cta_intro="Reserva tu sesión de Reiki, y permite que tu energía vuelva a fluir",
     ),
     "meditacion": dict(
         title="Meditación", hero="beach-meditation.png",
