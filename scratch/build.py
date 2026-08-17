@@ -35,7 +35,7 @@ HOME_DISCOVER_ES = [
          ],
          link="secciones/coaching-de-vida.html", link_text="Más Sobre Coaching"),
     dict(eyebrow="Descubre", title="Consejería Espiritual", slug="consejeria-espiritual", photo="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg", icon="8.png",
-         text="Conocerte, responsabilizarte y amarte, es identificarte con él todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
+         text="Conocerte, perdonarte y amarte, es identificarte con el todo y asumir tu conciencia de amor. Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
          link="secciones/consejeria-espiritual.html", link_text="Más Sobre Consejería"),
     dict(eyebrow="Descubre", title="Reiki y Energía", slug="reiki-energia", photo="reiki-energy-woman.png", icon="4.png",
          text="Tu cuerpo sabe cómo sanarse, solo tienes que ayudarlo a recordar, creando las condiciones necesarias para hacerlo realidad. Como práctica holística, el Reiki accede y activa los sistemas de energía sutil del cuerpo — chakras, cuerpo etérico — eliminando bloqueos y fomentando una alineación poderosa.",
@@ -67,7 +67,7 @@ SECTION_PAGES = {
     ),
     "consejeria-espiritual": dict(
         title="Consejería Espiritual", hero="F6DCE70D-CDC3-4C22-9138-2731A98D4A72.jpeg",
-        tagline="Conocerte, perdonarte y amarte, es identificarte con él todo y asumir tu conciencia de amor.",
+        tagline="Conocerte, perdonarte y amarte, es identificarte con el todo y asumir tu conciencia de amor.",
         body=[
             "La consejería espiritual no busca imponer un camino ni una creencia — es un acompañamiento honesto que te ayuda a reconectar con tu propia brújula interior, especialmente en los momentos donde sientes que has perdido el rumbo.",
             "Es estar dispuesto a trabajar aquellas partes de ti que no quieres reconocer. Allí donde hay resistencia y oscuridad es donde nace la luz que te hace ser.",
