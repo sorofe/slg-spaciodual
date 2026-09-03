@@ -6,6 +6,54 @@
 <title>Facilitadora | Spaciodual.us</title>
 <meta name="description" content="Conoce a Patria Roche, facilitadora y guía de Spaciodual.us.">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .facilitador-portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px 20px;
+    background: var(--color-bg, #faf8f5);
+  }
+  .portrait-img {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  }
+  .portrait-placeholder {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 3/4;
+    background: linear-gradient(160deg, #c9bfb0 0%, #8e7f70 100%);
+    border-radius: 4px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .portrait-placeholder svg {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.35;
+  }
+  .portrait-placeholder span {
+    font-family: var(--font-display, Georgia, serif);
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+</style>
 </head>
 <body>
   <header class="site-header is-solid" data-always-solid="true">
@@ -19,16 +67,20 @@
     </div>
   </header>
 <main>
-  <section class="hero page-hero" style="background-image:url('images/facilitador-hero.jpg'); background-position: center 30%; min-height: 75vh">
-    <div class="hero-content">
-      <a href="nosotros.html" class="back-link">&larr; Volver a Nosotros</a>
-      <h1>Patria Roche</h1>
-      <p class="hero-sub" style="font-size:1.1rem">Facilitadora &amp; Guía de Bienestar Integral</p>
+  <div class="facilitador-portrait">
+    <div class="portrait-placeholder">
+      <svg width="180" height="260" viewBox="0 0 180 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="90" cy="60" rx="42" ry="50" fill="white"/>
+        <path d="M10 260 C10 180 40 155 90 150 C140 155 170 180 170 260 Z" fill="white"/>
+      </svg>
+      <span>Patria Roche · Foto próximamente</span>
     </div>
-  </section>
+  </div>
 
   <section class="section-white">
     <div class="container" style="max-width:760px; text-align:center;">
+      <h2 style="margin-bottom:1.5rem;">Patria Roche</h2>
+      <p style="font-style:italic; color:#888; margin-bottom:2rem;">Facilitadora &amp; Guía de Bienestar Integral</p>
 
       <p>A Patria Roche la define la autenticidad. Su historia no nace de fórmulas mágicas ni de narrativas prefabricadas, sino de la experiencia real de quien, desde la incomodidad, se atrevió a cuestionar su propio rumbo para mirarse con honestidad y recordar quién es realmente.</p>
       <p>De ese proceso personal de transformación surgió su propósito: acompañar a otros a transitar el camino de regreso a su Alma.</p>
