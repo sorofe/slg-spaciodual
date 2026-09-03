@@ -1,4 +1,4 @@
-// Spaciodual.us clone — shared header behavior
+// SpacioDual.com clone — shared header behavior
 document.addEventListener('DOMContentLoaded', function () {
   var header = document.querySelector('.site-header');
 
