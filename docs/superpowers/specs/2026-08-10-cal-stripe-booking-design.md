@@ -114,7 +114,7 @@ other pages' content.
    supported by Cal.com's Stripe app) before relying on this for real
    bookings. If test mode isn't available through that app, this gets
    flagged explicitly rather than assumed to work.
-5. Commit and push to `sajesanctuary-clone` as with prior changes — live
+5. Commit and push to `spacio-dual-site` as with prior changes — live
    on GitHub Pages within a minute or two of pushing.
 
 ## Out of scope
